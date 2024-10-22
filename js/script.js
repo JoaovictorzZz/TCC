@@ -232,27 +232,9 @@ function initMap() {
     };
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
-//animação do mapa 
-document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('.info h1, .info .subtitle, .info .icons-mapa');
+//animação do texto 
 
-    // Define todos os elementos como invisíveis inicialmente
-    elements.forEach(element => {
-        element.classList.add('hidden');
-    });
 
-    const onScroll = () => {
-        elements.forEach(element => {
-            const rect = element.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
 
-            if (rect.top < windowHeight && rect.bottom > 0) {
-                element.classList.add('visible');
-                element.classList.remove('hidden');
-            }
-        });
-    };
 
-    document.addEventListener('scroll', onScroll);
-    onScroll(); // Verifica inicialmente no carregamento
-});
+

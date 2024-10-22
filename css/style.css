@@ -445,6 +445,9 @@ strong{
 
 }
 
+@media(max-width:1350px){
+    
+}
 
 .frase-prod {
     font-size: 30px;
@@ -472,16 +475,17 @@ strong{
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
+    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
 .product-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 .product-image img {
-    width: 100%;
+    width: 200px;
     height: 200px;
-    object-fit: cover;
+    margin: auto;
 }
 .product-details {
     padding: 15px;
@@ -508,6 +512,7 @@ strong{
 .add-to-cart:hover {
     background-color: #218838;
 }
+
 /*fim do protudos*/
 
 
@@ -672,97 +677,50 @@ strong{
 }
 
 .hist {
-    margin-top: 100px;
-    display: inline;
-    flex-direction: column;
-    align-items: center;
-    width:1100px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 450px;
-    position: relative; 
-}
-
-@media (max-width: 390px) {
-
-
-    .hist {
-       margin-top: 200px;
-       display: flex;
-       margin-bottom: -900px;
-    }
-
-    .hist > h1 {
-        margin-right: 1300px;
-        width: 300px;
-        font-size: 25px;
-        margin-top: -40px;
-    }
-
-    .paragrafo > p {
-        width: 200px;
-        text-align: center;
-        margin-right: 710px;
-        margin-top: 20px;
-        font-size: 17px;
-    }
-
-    .frase {
-        font-size: 1.5em;
-    }
-
-    .icons img {
-        width: 25px; 
-        height: 25px; 
-    }
-
-    .icons-container {
-        margin-left: 20px;
-        display: block;
-        margin-bottom: 80px;
-        margin-top: -80px;
-    }
-
-    .btn {
-        font-size: 18px; 
-        margin-left: 10px;
-    }
-
-    .map-responsive {
-        display: none;
-    }
-
-    .loc {
-        width: 300px;
-        margin-top: 200px;
-        height: 1050px;
-    }
-
-
-}
-
-
-
-
-
-.hist {
-    margin-top: 150px;
-    background-color: #131313;
-    width: 100%;
+    margin-top: 190px;
+    background-color: transparent;
     height: 400px;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
-    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transform: translateY(20px); 
+    margin-bottom: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.icone-hist{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    
 }
 
 .icone-hist > img {
-    height: 170px;
-    width: 170px;
-    background-attachment: fixed;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.text{
+    max-width: 900px;
+}
+.text{
+    h1,h2{
+        font-size: 40px;
+        font-family: "Bebas Neue", sans-serif;
+    }
+    .cor-text{
+        color: #238644;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
 
 @media(max-width:1000px) {
-    .coffe {
-        display: none;
+    .text{
+        display: block;
     }
 }
 

@@ -734,55 +734,19 @@ strong{
 
 
 
-.hist > h1 {
-    text-align: center;
-    color: rgba(243,221,40,245);
-    font-size: 35px;
-    margin-top: -700px;
-    margin-left: 580px;
-}
 
-.paragrafo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.paragrafo > p {
-    text-align: center;
-    width: 500px;
-    margin-left: 570px;
-    margin-top: 30px;
-    font-size: 25px;
-    font-family: 'Barlow Semi Condensed';
-}
-
-.hist h1, .hist p, .hist img {
-    opacity: 0; 
-    transform: translateY(100px); 
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
-}
-
-.hist.show h1, .hist.show p, .hist.show img {
-    opacity: 1; 
-    transform: translateY(0); 
-}
-
-.coffe {
+.hist {
     margin-top: 150px;
     background-color: #131313;
-    width: 1100px;
-    height: 900px;
-    border-radius: 50%;
-    margin-left: -500px;
+    width: 100%;
+    height: 400px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
     background-attachment: fixed;
 }
 
-.coffe > img {
-    margin-left: 420px;
-    width: 600px;
-    margin-top: 250px;
+.icone-hist > img {
+    height: 170px;
+    width: 170px;
     background-attachment: fixed;
 }
 

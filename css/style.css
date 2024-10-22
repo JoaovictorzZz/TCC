@@ -446,6 +446,15 @@ strong{
 }
 
 
+.frase-prod {
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: normal;
+    background: linear-gradient(45deg, #00fa7de1, #000000);
+    -webkit-background-clip: text; /* Aplica o clip ao texto */
+    -webkit-text-fill-color: transparent; /* Preenche o texto com o degradê */
+}
+
   /*protudos*/
   .products {
     display: grid;
@@ -456,6 +465,7 @@ strong{
     margin: 0 auto;
     margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 150px;
 }
 .product-card {
     background-color: white;

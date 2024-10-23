@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1d1b1b;
+    color: #3a3a3a;
+    padding: 4px;
+    height: 90px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 9px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 50px;
+    padding: 0;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: flex;
+    font-family: 'Barlow Semi Condensed';
+    margin-top: 70px;
+}
+
+.nav-list li {
+    margin: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.nav-list > li > a > img {
+    width: 35px;
+}
+.nav-list a:hover{
+    color: #dde023;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .nav {
+        display: none;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 50px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+    }
+
+    .hamburger div {
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+    }
+
+    /* Animação do menu ao abrir */
+    .menu-active .nav {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        background-color: #131313;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+        height: 200px;
+    }
+
+    .menu-active .nav-list {
+        display: block;
+    }
+
+    .menu-active .nav-list li {
+        margin: 15px;
+        margin: auto;
+        text-align: center;
+        display: flex;
+    }
+
+    .menu-active .nav-list a {
+        font-size: 1.2em;
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+        animation-delay: 0.2s;
+    }
+
+    /* Animação do ícone de hambúrguer para um "X" ao abrir */
+    .menu-active .hamburger div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-active .hamburger div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-active .hamburger div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Animação de fade-in para os links do menu */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+/* Detalhes do produto */
+.product-container {
+    display: flex;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.product-gallery {
+    flex: 1;
+}
+
+.product-gallery .main-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.thumbs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.thumbs img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.product-details h2 {
+    margin-bottom: 20px;
+}
+
+.preço {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.parcelas {
+    color: #27ae60;
+    margin-top: 5px;
+}
+
+.quantidade {
+    margin: 20px 0;
+}
+
+.whatsapp-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .thumbs {
+        justify-content: center;
+    }
+}
+

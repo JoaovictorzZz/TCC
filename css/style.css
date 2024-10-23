@@ -421,6 +421,7 @@ strong{
     text-align: center;
     margin-top: 40%;
     font-family: 'Roboto', sans-serif;
+
 }
 
 .frase h1 {
@@ -452,7 +453,7 @@ strong{
 .frase-prod {
     font-size: 30px;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: normal;
+    font-weight: bolder;
     background: linear-gradient(45deg, #00fa7de1, #000000);
     -webkit-background-clip: text; /* Aplica o clip ao texto */
     -webkit-text-fill-color: transparent; /* Preenche o texto com o degradê */
@@ -501,7 +502,7 @@ strong{
     margin-bottom: 15px;
 }
 .add-to-cart {
-    background-color: #28a745;
+    background-color: #278b3f;
     color: white;
     padding: 10px;
     border: none;
@@ -677,16 +678,15 @@ strong{
 }
 
 .hist {
-    margin-top: 190px;
     background-color: transparent;
     height: 400px;
-    width: 100%;
+    width: 100%; 
+    margin-top: 170px;
     display: flex;
     align-items: center;
     justify-content:center;
-    transform: translateY(20px); 
     margin-bottom: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
+   
 }
 
 .icone-hist{
@@ -707,22 +707,19 @@ strong{
 }
 .text{
     h1,h2{
-        font-size: 40px;
+        font-size: 45px;
         font-family: "Bebas Neue", sans-serif;
     }
     .cor-text{
         color: #238644;
     }
     p{
+        font-size: 19px;
         font-family: Arial, Helvetica, sans-serif;
     }
 }
 
-@media(max-width:1000px) {
-    .text{
-        display: block;
-    }
-}
+
 
 /*fim historia*/
         
@@ -739,7 +736,7 @@ ul{
     list-style: none;
 }
 .footer{
-    margin-top: 650px;
+    margin-top: 150px;
     background-color: #24262b;
     padding: 70px 0;
     font-family: Arial, Helvetica, sans-serif;

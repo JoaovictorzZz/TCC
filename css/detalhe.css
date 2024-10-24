@@ -175,6 +175,7 @@ body {
 
 .product-gallery {
     flex: 1;
+    
 }
 
 .product-gallery .main-image {
@@ -182,6 +183,21 @@ body {
     height: 600px;
     margin-bottom: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease;
+    cursor: crosshair;
+}
+
+.zoom-lente {
+    position: absolute;
+    width: 300px; /* Aumentado o tamanho da "lente" */
+    height: 300px;
+    border: 2px solid #000;
+    display: none;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: 200%; /* Tamanho da imagem ampliada */
+    background-position: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adicionado sombra para melhor visualização */
 }
 
 .thumbs {
@@ -191,39 +207,66 @@ body {
 }
 
 .thumbs img {
-    width: 60px;
+    width: 150px;
     height: auto;
     cursor: pointer;
+    margin-right: 50px;
 }
+
+.thumbs img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+input#quantity {
+    padding: 8px;
+    width: 100px;
+    border: 1px solid #27ae60;
+    border-radius: 5px;
+}
+
 
 .product-details {
     flex: 1;
     margin-left: 40px;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
 }
 
 .product-details h2 {
     margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 35px;
     color: #276441;
 }
 .mais-detalhes {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 22px;
 }
 
 .product-details > li{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 430;
+    font-size: 19px;
+    letter-spacing: 1px;
 }
 .preço {
     font-size: 24px;
-    color: #2c3e50;
+    color: #27ae60;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .parcelas {
-    color: #27ae60;
+    color: #2c3e50;
     margin-top: 5px;
-    font-weight: normal;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 label{

@@ -417,15 +417,15 @@ body {
 body1 {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     justify-content: center;
 }
 
 .cards-container {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     max-width: 1200px;
     width: 100%;
 }
@@ -437,7 +437,7 @@ body1 {
     display: flex;
     overflow: hidden;
     flex-direction: row;
-    align-items: center;
+    align-items: right;
 }
 
 .cardd-content {
@@ -446,7 +446,7 @@ body1 {
 }
 
 .cardd-content h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
     color: #333;
 }

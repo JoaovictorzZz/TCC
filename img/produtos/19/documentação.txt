@@ -1,0 +1,31 @@
+nome:
+
+Luva Couro Raspa P7 Soldador Epi Cano Curto Segurança
+
+descrição:
+
+Luva Cano Curto
+Cores: Branco
+Marca: Marfe Luvas
+Material: Raspa
+CA: 42738
+
+FICHA TÉCNICA:
+– Raspa de Alta Qualidade;
+– Confortável;
+– Resistente;
+
+APLICAÇÕES:
+– Agro Industria;
+– Siderurgica;
+– Mineração;
+– Industrias em Geral;
+– Construção Civil;
+– Agentes Escoriantes;
+– Particulas Volantes;
+– Agentes Químicos;
+– Solda;
+– Entre outros;
+
+valor:
+R$ 10,90 

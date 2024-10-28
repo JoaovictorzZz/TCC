@@ -1,0 +1,54 @@
+nome:
+
+Máquina solda inverter Touch 150 BV branco/azul 110V/220V Profissional Boxer
+
+descrição:
+
+KIT Inversora de Solda 140A BiVolt com Função TIG Raspagem e Máscara de solda TOUCH 150 Boxer
+
+Esse produto acompanha NOTA FISCAL.
+
+O KIT Inversora de Solda 140A BiVolt com Função TIG Raspagem e Máscara de solda TOUCH 150 Boxer para soldar eletrodos até 3.25mm. Possui funções inteligentes, como Hot Start para uma abertura de arco mais fácil e Anti Stick para que os eletrodos que colaram à peça possam ser utilizados novamente. Solda eletrodo E6013, E7018, ferro fundido e Inox.
+
+Produto Inversora de Solda
+Tipo Eletrodos Revestidos e TIG
+Marca Boxer
+Uso Indicado Pequenas Manutenções
+Tipo de Processo de Soldagem Eletrodo Revestido
+Tensão Elétrica Bivolt
+Modelo TOUCH 150BV
+Capacidade Elétrica Máxima 140 A
+Eletrodos Eletrodo 6013, 7018, Ferro fundido, Inox até 3.25mm
+Disjuntor Recomendado 40 A
+Índice de Proteção 21 IP
+Classe IP 21
+Fator de Trabalho 140A @ 35%
+Dimensão (AxLxP) 300x130x220 mm
+Material da Estrutura Metal
+Tipo do Material da Estrutura Aço
+Frequência 50/60 Hz
+Potência Nominal Aparente 6,6 Kva
+Tensão em Vazio Vdc 62 V
+Tensão em Vazio para 127V (110V) Vdc 72 V
+Tensão em Vazio para 250V (220V) Vdc 62 V
+Possui Sensor Embutido Sim
+Quantidade de Fases Bifásico e Monofásico
+Sistema de Refrigeração Forçada a Ar Ventoinha
+Acompanha Rodas Não
+Peso do Produto 4,5 Kg
+Corrente Elétrica (Ampère) 140 A
+Corrente de Carga 38
+Tipos de Corrente Contínua
+Produto Acompanha Embalagem Sim
+Tipo de Embalagem Caixa
+Altura da Embalagem 265 mm
+Largura da Embalagem 230 mm
+Profundidade da Embalagem 400 mm
+Peso do Produto na Embalagem 4,5 Kg
+Conteúdo da Embalagem Máquina , Cabo com garra negativa 300A (engate rápido 9mm), Cabo com porta eletrodo 200A (engate rápido 9mm) , Alça Tiracolo, Máscara de solda com vidro escuro
+Dimensão da Embalagem 265x230x400 mm
+Referência do Produto TOUCH 150 BV
+
+valor:
+
+R$ 1.008,17em 10x R$ 100,82 sem juros

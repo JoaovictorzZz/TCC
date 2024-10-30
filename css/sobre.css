@@ -5,9 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-*{
-    margin: 0%;
-}
+
 
 /* Adiciona transição ao conteúdo */
 .fade-out {
@@ -206,6 +204,9 @@ body{
     background: #eaeaea;
     overflow-x: hidden;
 }
+
+
+
 
 .container{
     position: absolute;
@@ -457,6 +458,10 @@ body{
 ul{
     list-style: none;
 }
+
+
+/*footer*/
+
 .footer{
     background-color: #24262b;
     padding: 70px ;

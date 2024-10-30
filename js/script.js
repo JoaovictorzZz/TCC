@@ -48,27 +48,27 @@ document.addEventListener("DOMContentLoaded", function() {
         clearInterval(slideInterval);
     };
 
-    // Eventos dos botões de navegação
+    //Função para passar o slide 
     nextButton.addEventListener("click", () => {
-        stopAutoPlay();  // Pausa o autoplay ao clicar no botão
-        nextSlide();     // Muda para o próximo slide manualmente
-        startAutoPlay(); // Reinicia o autoplay
+        stopAutoPlay();  
+        nextSlide();     
+        startAutoPlay(); 
     });
 
     prevButton.addEventListener("click", () => {
-        stopAutoPlay();  // Pausa o autoplay ao clicar no botão
-        prevSlide();     // Muda para o slide anterior manualmente
-        startAutoPlay(); // Reinicia o autoplay
+        stopAutoPlay();  
+        prevSlide();     
+        startAutoPlay(); 
     });
 
-    // Iniciar autoplay ao carregar a página
+    // Iniciar autoplay  Daa página
     startAutoPlay();
-    showSlide(currentIndex); // Exibir o slide inicial
+    showSlide(currentIndex); 
 });
 
 //
 
-
+// mapa
 document.addEventListener("DOMContentLoaded", function() {
     const locSection = document.querySelector('.loc');
     const animatedElements = document.querySelectorAll('.animate-up');
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const locSectionTop = locSection.getBoundingClientRect().top;
         const halfViewportHeight = window.innerHeight / 2;
 
-        // Verificar se a seção "loc" está visível na tela
+       
         if (locSectionTop < halfViewportHeight) {
             animatedElements.forEach(element => {
                 element.classList.add('in-view');
@@ -93,10 +93,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-    // Adicionar um ouvinte de evento de scroll à janela
+   
     window.addEventListener('scroll', () => {
         checkScroll();
-        // Adicionar ou remover classe 'hide' no botão
+       
         if (buttonInView) {
             button.classList.remove('hide');
         } else {
@@ -104,30 +104,30 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Verificar a posição do scroll ao carregar a página
+    
     checkScroll();
 });
-
+//mapa fim
 
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-list a, .logo a');
 
-    // Adiciona a classe fade-in quando a página é carregada
+    
     document.body.classList.add('fade-in');
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault(); // Previne o comportamento padrão do link
+            e.preventDefault(); 
             
             const targetUrl = this.href;
 
-            // Adiciona a classe fade-out ao corpo
+         
             document.body.classList.add('fade-out');
 
-            // Aguarda a animação completar antes de navegar
+            
             setTimeout(() => {
                 window.location.href = targetUrl;
-            }, 500); // Ajuste este valor de acordo com a duração da animação
+            }, 500);
         });
     });
 });
@@ -140,14 +140,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const produtoTop = produto.getBoundingClientRect().top;
             const viewportHeight = window.innerHeight;
 
-            if (produtoTop < viewportHeight - 50) { // Adiciona um pequeno offset
+            if (produtoTop < viewportHeight - 50) { 
                 produto.classList.add('show');
             }
         });
     }
 
     window.addEventListener('scroll', checkScroll);
-    checkScroll(); // Verifica inicialmente se algum produto já está na tela
+    checkScroll(); 
 });
 
 
@@ -186,6 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//carrosel
 const carousel = document.querySelector('.carousel');
 let currentIndex = 0;
 const totalItems = document.querySelectorAll('.product-card').length;
@@ -227,12 +228,12 @@ updateCarousel();
 // Inicializa o Google Maps
 function initMap() {
     var mapOptions = {
-        center: { lat: -23.5505, lng: -46.6333 }, // Coordenadas de São Paulo
+        center: { lat: -23.5505, lng: -46.6333 }, 
         zoom: 12
     };
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
-//animação do texto 
+
 
 
 

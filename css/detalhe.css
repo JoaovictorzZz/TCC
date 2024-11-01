@@ -17,7 +17,6 @@ body {
     padding: 10px 20px;
     background-color: #1d1b1b;
     color: #3a3a3a;
-    padding: 4px;
     height: 90px;
     position: fixed; 
     top: 0; 
@@ -25,28 +24,28 @@ body {
     width: 100%; 
     z-index: 1000; 
 }
-
+.logo{
+    margin-right: auto;
+}
 .logo a {
     text-decoration: none;
     color: #fff;
     font-size: 1.5em;
-    margin-left: 9px;
 }
 
 .nav {
     display: flex;
+    
 }
 
 .nav-list {
     list-style: none;
     margin: 50px;
-    padding: 0;
-    justify-content: space-between;
+    justify-content: flex-end;
     letter-spacing: 1px;
     font-size: 20px;
     display: flex;
     font-family: 'Barlow Semi Condensed';
-    margin-top: 70px;
 }
 
 .nav-list li {
@@ -57,10 +56,6 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-size: 1em;
-}
-
-.nav-list > li > a > img {
-    width: 35px;
 }
 .nav-list a:hover{
     color: #dde023;
@@ -77,10 +72,20 @@ body {
     width: 25px;
     margin: 3px 0;
 }
+.cart-icon img {
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+}
+.cart-icon{
+    margin-left: auto;
+    margin: 0%;
+}
+
 
 /* Responsividade */
-@media (max-width: 768px) {
-
+@media (max-width: 868px) {
+   
     .nav {
         display: none;
         opacity: 0;
@@ -118,7 +123,7 @@ body {
         padding: 10px;
         border-radius: 5px;
         z-index: 1000;
-        height: 200px;
+        height: 220px;
     }
 
     .menu-active .nav-list {
@@ -164,6 +169,7 @@ body {
         }
     }
 }
+
 
 
 /* Detalhes do produto */

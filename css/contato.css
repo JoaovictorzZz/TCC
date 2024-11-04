@@ -152,9 +152,9 @@ body {
     }
 
     .hamburger div {
-        width: 100%;
+        width: 40px;
         height: 4px;
-        background-color: #fff;
+        background-color: #ffffff;
         transition: all 0.3s ease;
     }
 
@@ -184,7 +184,6 @@ body {
         text-align: center;
     }
 
-
     .menu-active .nav-list a {
         font-size: 1.2em;
         opacity: 0;
@@ -192,17 +191,17 @@ body {
         animation-delay: 0.2s;
     }
 
-    /* Animação do ícone de hambúrguer para um "X" ao abrir */
+    /* Animação do ícone de hambúrguer para ummm "X" ao abrir */
     .menu-active .hamburger div:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(4px, 4px);
     }
-
+    
     .menu-active .hamburger div:nth-child(2) {
         opacity: 0;
     }
-
+    
     .menu-active .hamburger div:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+        transform: rotate(-45deg) translate(9px, -10px);
     }
 
     /* Animação de fade-in para os links do menu */

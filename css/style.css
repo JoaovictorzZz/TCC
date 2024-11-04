@@ -150,7 +150,7 @@ body {
     }
 
     .hamburger div {
-        width: 100%;
+        width: 40px;
         height: 4px;
         background-color: #fff;
         transition: all 0.3s ease;
@@ -189,17 +189,17 @@ body {
         animation-delay: 0.2s;
     }
 
-    /* Animação do ícone de hambúrguer para um "X" ao abrir */
+    /* Animação do ícone de hambúrguer para ummm "X" ao abrir */
     .menu-active .hamburger div:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(4px, 4px);
     }
-
+    
     .menu-active .hamburger div:nth-child(2) {
         opacity: 0;
     }
-
+    
     .menu-active .hamburger div:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+        transform: rotate(-45deg) translate(9px, -10px);
     }
 
     /* Animação de fade-in para os links do menu */
@@ -225,12 +225,35 @@ body {
     }
     
 }
-@media(max-width: 700px) {
+@media(max-width: 1090px) {
     .image-text>h1{
         font-size: 55px;
     }
 
 }
+/* Responsividade */
+@media (max-width: 968px) {
+    .carousel {
+        height:370px;
+    }
+    
+    .carousel-slide {
+        height: 390px;
+    }
+
+    .carousel-button {
+        padding: 5px;
+    }
+    strong{
+        font-size: 28px;
+    }
+    .image-text {
+        margin-top: 18px;
+        font-family: 14px;
+        font-weight: lighter;
+    }
+}
+
 
 .carousel {
     position: relative;
@@ -346,26 +369,6 @@ strong{
     animation: slideUp 1s forwards;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .carousel {
-        height:300px;
-    }
-    
-    .carousel-slide {
-        height: 340px;
-    }
-
-    .carousel-button {
-        padding: 5px;
-    }
-
-    .image-text {
-        margin-top: 18px;
-        
-        font-weight: lighter;
-    }
-}
 
   /*fim carrosel*/
 
@@ -410,6 +413,26 @@ strong{
   }
   /*fim de marcas*/
 
+    /*  botão q sobe ao topo */
+    #topoButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none; 
+        background-color: #0cb490;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        z-index: 1000;
+    }
+
+    #topoButton:hover {
+        background-color: #088d82;
+    }
   /*elemetos*/
 @keyframes slideUp {
     0% {

@@ -56,7 +56,7 @@ function nextSlide() {
     updateCarousel();
 }
 
-   // Mostrar o botão quando o usuário rolar 100px para baixo
+   // Mostrar o botão 
    window.onscroll = function() {mostrarBotao()};
 
    function mostrarBotao() {
@@ -68,7 +68,7 @@ function nextSlide() {
        }
    }
 
-   // Função para rolar a página até o topo
+   // Função para ir ao topo 
    function voltarAoTopo() {
        window.scrollTo({top: 0, behavior: 'smooth'});
    }

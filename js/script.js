@@ -66,7 +66,22 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlide(currentIndex); 
 });
 
-//
+ // Mostrar o botão 
+window.onscroll = function() {mostrarBotao()};
+
+function mostrarBotao() {
+    const button = document.getElementById("topoButton");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+// Função para ir ao topo 
+function voltarAoTopo() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
 // mapa
 document.addEventListener("DOMContentLoaded", function() {

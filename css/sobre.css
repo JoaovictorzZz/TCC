@@ -159,6 +159,33 @@
         display: block;
     }
 
+    .hamburger div {
+        width: 40px;
+        height: 4px;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+    }
+
+    /* Animação do menu ao abrir */
+    .menu-active .nav {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        background-color: #131313;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+        height: 530px;
+    }
+
+    .menu-active .nav-list {
+        display: block;
+    }
+
     .menu-active .nav-list li {
         padding-top: 40px;
         margin: auto;
@@ -172,19 +199,18 @@
         animation-delay: 0.2s;
     }
 
-    /* Animação do ícone de hambúrguer para um "X" ao abrir */
+    /* Animação do ícone de hambúrguer para ummm "X" ao abrir */
     .menu-active .hamburger div:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(4px, 4px);
     }
-
+    
     .menu-active .hamburger div:nth-child(2) {
         opacity: 0;
     }
-
+    
     .menu-active .hamburger div:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+        transform: rotate(-45deg) translate(9px, -10px);
     }
-
     /* Animação de fade-in para os links do menu */
     @keyframes fadeIn {
         0% {

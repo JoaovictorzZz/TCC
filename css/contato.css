@@ -106,7 +106,7 @@ body {
     font-size: 1em;
 }
 .nav-list a:hover{
-    color: #dde023;
+    color:#218838;
 }
 .hamburger {
     display: none;
@@ -171,7 +171,7 @@ body {
         padding: 10px;
         border-radius: 5px;
         z-index: 1000;
-        height: 220px;
+        height: 530px;
     }
 
     .menu-active .nav-list {
@@ -179,11 +179,11 @@ body {
     }
 
     .menu-active .nav-list li {
-        margin: 15px;
+        padding-top: 40px;
         margin: auto;
         text-align: center;
-        display: flex;
     }
+
 
     .menu-active .nav-list a {
         font-size: 1.2em;

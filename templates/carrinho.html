@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carriola de Itens</title>
+    <title>Carriola de Compras</title>
     <link rel="stylesheet" href="../css/carrinho.css">
+    <link rel="shortcut icon" href="../img/imglogos/icone2 (2).png" type="image/x-icon">
 </head>
 <body>
-    <div class="cart">
-        <h2>Minha Carriola</h2>
+    <div class="container">
+        <!-- Item da carriola -->
         <div class="cart-item">
-            <img src="../img/imgprodutos/Fotoproduto1.webp" alt="Produto" class="product-image">
-            <div class="item-details">
-                <span class="product-name">Produto Exemplo</span>
-                <span class="product-price">R$ 950,00</span>
-                <div class="quantity">
-                    <label>Quantidade: <input type="number" value="1" min="1"></label>
-                </div>
+            <img src="../img/imgprodutos/Fotoproduto1.webp" alt="Imagem do produto">
+            <div class="cart-details">
+                <h3>Kit de Ferramentas Profissional 100 Peças</h3>
+                <p>Inclui chaves, alicates, martelo, e maleta organizadora</p>
             </div>
-            <button class="remove-btn" onclick="removeItem(this)">🗑️</button>
+            <div class="quantity">
+                1 x
+            </div>
+            <div class="price">
+                R$ 799,99
+            </div>
+            <button class="remove-btn" onclick="removeItem(this)">Remover</button>
         </div>
+        <!-- Resumo -->
+        <div class="summary">
+            
+            <p class="total">Total: R$ 994,10</p>
+        </div>
+        <!-- Botão de Finalizar Pedido -->
+         <br>
+        <button class="checkout-btn">Finalizar Pedido</button>
     </div>
     <script src="../js/models/carrinho.js"></script>
 </body>
 </html>
+

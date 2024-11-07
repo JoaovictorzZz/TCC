@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(../img/epiblack.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.537), rgba(0, 0, 0, 0.5)), url(../img/epiblack.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

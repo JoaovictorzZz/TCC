@@ -77,51 +77,60 @@ function mostrarBotao() {
         button.style.display = "none";
     }
 }
+// fim carrossel
+
+// Função do scroll apos eu rolar um para abaixo */
+
+  // Função para verificar se um elemento está visível na tela
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  // Função para adicionar a classe 'visible' aos produtos quando entrarem na tela
+  function handleScroll() {
+    const products = document.querySelectorAll('.product-card');
+    
+    products.forEach(product => {
+      if (isInViewport(product)) {
+        product.classList.add('visible');
+      }
+    });
+  }
+
+  // Inicializa a função ao carregar a página e a cada rolagem
+  window.addEventListener('load', handleScroll);
+  window.addEventListener('scroll', handleScroll); 
+
+
 
 // Função para ir ao topo 
 function voltarAoTopo() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+
 // mapa
-document.addEventListener("DOMContentLoaded", function() {
-    const locSection = document.querySelector('.loc');
-    const animatedElements = document.querySelectorAll('.animate-up');
-    const button = document.querySelector('.btn');
-    let buttonInView = false;
+// Função para verificar se um elemento está visível na tela
+function estaNaTela(elemento) {
+    const retangulo = elemento.getBoundingClientRect();
+    return retangulo.top <= window.innerHeight && retangulo.bottom >= 0;
+}
 
-    const checkScroll = () => {
-        const locSectionTop = locSection.getBoundingClientRect().top;
-        const halfViewportHeight = window.innerHeight / 2;
-
-       
-        if (locSectionTop < halfViewportHeight) {
-            animatedElements.forEach(element => {
-                element.classList.add('in-view');
-            });
-            buttonInView = true;
-        } else {
-            animatedElements.forEach(element => {
-                element.classList.remove('in-view');
-            });
-            buttonInView = false;
-        }
-    };
-
-   
-    window.addEventListener('scroll', () => {
-        checkScroll();
-       
-        if (buttonInView) {
-            button.classList.remove('hide');
-        } else {
-            button.classList.add('hide');
-        }
-    });
-
+// Função para adicionar a classe 'in-view' ao mapa quando ele entrar na tela
+function lidarComScroll() {
+    const mapa = document.querySelector('.caixa-mapa');
     
-    checkScroll();
-});
+    // Verifica se o elemento está visível na tela
+    if (estaNaTela(mapa)) {
+        mapa.classList.add('in-view');
+    }
+}
+
+// Inicializa a função ao carregar a página e a cada rolagem
+window.addEventListener('load', lidarComScroll); 
+window.addEventListener('scroll', lidarComScroll); 
+
 //mapa fim
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -188,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', checkScroll);
-    checkScroll(); // Verifica inicialmente se algum elemento já está na tela
+    checkScroll(); 
 });
 
 
@@ -240,6 +249,27 @@ window.addEventListener('resize', updateCarousel);
 updateCarousel();
 
 //mapa
+// Função para verificar se um elemento está visível na tela
+function estaNaTela(elemento) {
+    const retangulo = elemento.getBoundingClientRect();
+    // Verifica se o topo do elemento está dentro da altura da janela
+    return retangulo.top <= window.innerHeight && retangulo.bottom >= 0;
+}
+
+// Função para ativar a animação ao rolar a página
+function lidarComScroll() {
+    const mapa = document.querySelector('.caixa-mapa');
+    
+    // Se o mapa estiver visível na tela, adiciona a classe 'in-view'
+    if (estaNaTela(mapa)) {
+        mapa.classList.add('in-view');
+    }
+}
+
+// Inicia a verificação quando a página carrega e a cada rolagem
+window.addEventListener('load', lidarComScroll); 
+window.addEventListener('scroll', lidarComScroll); 
+
 // Inicializa o Google Maps
 function initMap() {
     var mapOptions = {
@@ -248,6 +278,31 @@ function initMap() {
     };
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
+
+// engrenagem 
+// Seleciona todos os elementos que precisam de animação
+const elementosAnimados = document.querySelectorAll('.animate-up');
+
+// Função para verificar se o elemento está visível na tela
+function estaNaTela(elemento) {
+    const retangulo = elemento.getBoundingClientRect();
+    return retangulo.top <= window.innerHeight && retangulo.bottom >= 0;
+}
+
+// Função para adicionar a classe 'in-view' aos elementos quando eles estiverem visíveis
+function ativarAnimacao() {
+    elementosAnimados.forEach(elemento => {
+        if (estaNaTela(elemento)) {
+            elemento.classList.add('in-view');
+        }
+    });
+}
+
+// Inicializa a animação ao carregar a página e durante o scroll
+window.addEventListener('load', ativarAnimacao);
+window.addEventListener('scroll', ativarAnimacao);
+
+
 
 
 

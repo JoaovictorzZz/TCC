@@ -435,16 +435,6 @@ strong{
         background-color: #088d82;
     }
   /*elemetos*/
-@keyframes slideUp {
-    0% {
-        transform: translate(-50%, 50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(-50%, -50%);
-        opacity: 1;
-    }
-}
 
 .frase {
     text-align: center;
@@ -478,7 +468,7 @@ strong{
 @media(max-width:1350px){
     
 }
-
+/* inicio produtos*/
 .frase-prod {
     font-size: 30px;
     font-family: "Josefin Sans", sans-serif;
@@ -507,7 +497,9 @@ strong{
     overflow: hidden;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 .product-card:hover {
     transform: scale(1.03);
@@ -542,6 +534,12 @@ strong{
 .add-to-cart:hover {
     background-color: #218838;
 }
+/*scroll*/
+.product-card.visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: trasnform 1.0s ease-out, opacity 1.0s ease-out;
+}
 
 /*fim do protudos*/
 
@@ -565,6 +563,34 @@ strong{
 }
 
 /* Estilo para o Google Maps */
+/* Adicionando a animação para a seção do mapa */
+.caixa-mapa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, rgb(48, 48, 48), rgb(0, 17, 4));
+    margin: 20px auto;
+    width: 100%;
+    min-width: 360px;
+    height: 320px;
+    max-width: 1300px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.377);
+    overflow: hidden;
+    
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(50px); /* Inicia deslocado para baixo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animação de transição */
+}
+
+/* Quando o elemento entra na tela, ele se move para a posição original */
+.caixa-mapa.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Movimento para a posição normal */
+}
+
+/* Restante do CSS conforme você já forneceu */
 .mapa-container {
     flex: 2;
 }
@@ -583,7 +609,8 @@ strong{
     color: #fff;
     padding: 20px;
 }
-.info>h1{
+
+.info > h1 {
     margin-top: 8px;
     font-size: 35px;
     font-family: "Josefin Sans", sans-serif;
@@ -591,30 +618,25 @@ strong{
     background: linear-gradient(45deg, #00fa7de1, #ffffff);
     -webkit-background-clip: text; /* Aplica o clip ao texto */
     -webkit-text-fill-color: transparent; /* Preenche o texto com o degradê */
-
-    
 }
+
 .subtitle {
     margin-top: 100px;
     font-size: 20px;
-    
-    
 }
+
 .subtitle a {
     color: white;
     text-decoration: none;
     font-family: 'Barlow Semi Condensed';
-    font-weight:lighter;
-    
+    font-weight: lighter;
 }
-
 
 .icons-mapa {
     display: flex;
     justify-content: center;
     gap: 25px;
     margin-top: 100px;
-    
 }
 
 .icons-mapa a img {
@@ -627,19 +649,6 @@ strong{
     transform: scale(1.1);
 }
 
-/*animação  dos elementos*/
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.hidden {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-
 /* Responsividade */
 @media (max-width: 868px) {
     .caixa-mapa {
@@ -647,20 +656,23 @@ strong{
         height: 705px;
         width: 500px;
     }
-    .info{
+
+    .info {
         margin-top: 230px;
         text-align: center;
     }
-    .info>h1{
+
+    .info > h1 {
         margin-top: 10px;
     }
+
     .subtitle {
         margin-top: 40px;
         font-size: 18px;
     }
+
     #map {
         height: 200px;
-       
         margin-top: -20px;
     }
 
@@ -668,16 +680,14 @@ strong{
         flex-direction: row;
         position: relative;
     }
-    
 }
-@media (max-width: 498px){
+
+@media (max-width: 498px) {
     .caixa-mapa {
         height: 705px;
         width: 330px;
     }
 }
-
-
 /*fim do mapa */
 
 /* Media Queries para telas menores */
@@ -699,7 +709,8 @@ strong{
 /*fim mapa*/
 
 
- /*historia da loja */ 
+ 
+/* engrenagem e texto */
 
 /* Classe adicionada para mostrar o elemento */
 .in-view.animate-up {
@@ -749,10 +760,10 @@ strong{
     }
 }
 
-
-
-/*fim historia*/
+/*fim  engrenagem e texto */
         
+
+
  /*rodape*/
  .containerr{
     max-width: 1170px;

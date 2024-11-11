@@ -29,26 +29,22 @@
             <div class="line"></div>
         </div>
     </header>
-
-    <section>
-        <h2>Fale Conosco</h2>
-        <div class="fale">
-            <img src="../img/homemnotelefone-removebg-preview.png" alt="Imagem da Logo">
+        <div class="container">
+            <div class="image">
+                <img src="../img/homemnotelefone-removebg-preview.png" alt="">
+            </div>
+            <div class="form">
+                <h2>Fale Conosco</h2>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Mensagem"></textarea>
+                <button>Enviar</button>
+            </div>
         </div>
-    
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <label>Nome</label>
-            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
-            <label>Mensagem</label>
-            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-    
-            <input type="hidden" name="accessKey" value="c174ea47-c282-4a7d-b50c-dda7aeebfdaf">
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/templates/obrigado.html">
-        </form>
-    </section>
+
+</body>
+</html>
+
     <script src="../js/produtos.js"></script>
 </body>
 </html>

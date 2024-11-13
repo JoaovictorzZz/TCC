@@ -126,6 +126,12 @@ body {
 .checkout-btn:hover {
     background-color: rgb(8, 85, 8);
 }
+input#quantity {
+    padding: 8px;
+    width: 70px;
+    border: 1px solid #27ae60;
+    border-radius: 5px;
+}
 
 /* Responsivo */
 @media (max-width: 600px) {

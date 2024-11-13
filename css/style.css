@@ -59,6 +59,7 @@ body {
 .header {
     display: flex;
     align-items: center;
+    position: fixed;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #181717;

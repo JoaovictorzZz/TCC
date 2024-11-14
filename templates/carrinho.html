@@ -1,40 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carriola de Compras</title>
-    <link rel="stylesheet" href="../css/carrinho.css">
-    <link rel="shortcut icon" href="../img/imglogos/icone2 (2).png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./img/buy_cart_shop_shopping_icon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/carrinho.style/styles.css">
+  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Carrinho de Compras</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Item da carriola -->
-        <div class="cart-item">
-            <img src="../img/imgprodutos/Fotoproduto1.webp" alt="Imagem do produto">
-            <div class="cart-details">
-                <h3>Kit de Ferramentas Profissional 100 Peças</h3>
-                <p>Inclui chaves, alicates, martelo, e maleta organizadora</p>
+  <header>
+    <span>Carriola de compras <b>Loja veia</b></span>
+  </header>
+
+  <main>
+    <div class="page-title">Sua Carriola</div>
+    <div class="content">
+        <div id="cart"></div>
+      <section>
+        <table id="cart-items">
+          <thead>
+            <tr>
+                <td>
+                  <div class="product">
+                    <img src="https://picsum.photos/100/120" alt="Imagem do produto">
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="price" data-price="120">R$ 120</td> <!-- Adicione data-price com o valor original -->
+                <td>
+                  <div class="qty">
+                    <button class="minus"><i class='bx bx-minus'></i></button>
+                    <span class="quantity">2</span>
+                    <button class="plus"><i class='bx bx-plus'></i></button>
+                  </div>
+                </td>
+                <td>
+                  <button class="remove"><i class='bx bx-x'></i></button>
+                </td>
+              </tr>
+            <!-- Elemento para o total -->
+            <div>
+             
             </div>
-            <div class="quantity">
-                <label for="quantity">Quantidade:</label>
-                <input type="number" id="quantity" value="1" min="1">
+       
+        </table>
+      </section>
+      <aside>
+        <div class="box">
+         <header>Resumo do produto</header>
+          <div class="info">
+            <div>
+                <p>Sub-total: <span id="summary-subtotal">R$ 0.00</span></p>
             </div>
-            <div class="price">
-                R$ 799,99
+            <div>
+                <p>Frete: <span id="summary-frete">Gratuito</span></p>
             </div>
-            <button class="remove-btn" onclick="removeItem(this)">Remover</button>
+          </div>
+          <footer>
+            <p>Total: <span id="summary-total">R$ 0.00</span></p>
+          </footer>
         </div>
-        <!-- Resumo -->
-        <div class="summary">
-            
-            <p class="total">Total: R$ 994,10</p>
-        </div>
-        <!-- Botão de Finalizar Pedido -->
-         <br>
-        <button class="checkout-btn">Finalizar Pedido</button>
+
+        <button>Finalizar compras</button>
+      </aside>
     </div>
-    <script src="../js/models/carrinho.js"></script>
+  </main>
+  <footer class="footer">
+    <div class="containerr">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Sobre</h4>
+                <ul>
+                    <li><a href="./sobre.html">Quem somos</a></li>
+                    <li><a href="./protudos.html">Nossos serviços</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Programa de Afiliados</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Preciso de ajuda</h4>
+                <ul>
+                    <li><a href="/templates/index.html">Início</a></li>
+                    <li><a href="/templates/protudos.html">Produtos</a></li>
+                    <li><a href="/templates/sobre.html">Sobre</a></li>
+                    <li><a href="/templates/contato.html">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Acompanhe - nos</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="../img/imglogos/footer1.png" alt="icone email " height="30px" width="30px"></a>
+                    <a href="https://www.instagram.com/liderepisferramentas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="/img/imglogos/footer3.png" alt="icone instagram" height="30px" width="30px"></a>
+                    <a href="https://www.facebook.com/liderequipamentos6304" target="_blank"><img src="/img/imglogos/footer2.png" alt="icone facebook" height="30px" width="30px" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/models/carrinho.js"></script>
 </body>
 </html>
-

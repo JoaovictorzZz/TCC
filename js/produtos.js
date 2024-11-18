@@ -1,5 +1,5 @@
  //hamburger
-document.getElementById('hamburger').addEventListener('click', function() {
+ document.getElementById("hamburger").addEventListener("click", function() {
     document.body.classList.toggle('menu-active');
 });
 // fim do hamburguer
@@ -32,7 +32,7 @@ const totalItems = document.querySelectorAll('.product-card').length;
 const itemWidth = 270; // Largura do produto
 
 function updateCarousel() {
-    const maxTranslateX = 1300; // Limite máximo de pixels para o reset
+    const maxTranslateX = 1340 // Limite máximo de pixels para o reset
 
     // Calcula o deslocamento atual com base no índice e largura do item
     const translateX = currentIndex * itemWidth;

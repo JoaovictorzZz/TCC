@@ -1,9 +1,9 @@
-//header
 //hamburger
-document.getElementById('hamburger').addEventListener('click', function() {
-    document.body.classList.toggle('menu-active');
+document.getElementById("hamburger").addEventListener("click" , function(){
+    document.body.classList.toggle("menu-active")
 });
 //
+
 
 //carrosel
 document.addEventListener("DOMContentLoaded", function() {
@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const prevButton = document.querySelector(".carousel-button.prev");
     const nextButton = document.querySelector(".carousel-button.next");
     let currentIndex = 0;
-    const autoPlayInterval = 5000; // Tempo entre os slides (5 segundos)
+    const autoPlayInterval = 5000; //slides 5 segundos
     let slideInterval;
 
-    // Função para exibir o slide
+    //Função exibir slide
     const showSlide = (index) => {
         slides.forEach((slide, i) => {
             slide.classList.remove("current", "previous");
@@ -26,29 +26,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     };
 
-    // Função para o próximo slide
+    //Função proximo slide
     const nextSlide = () => {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
     };
 
-    // Função para o slide anterior
+    //Função para slide anterior
     const prevSlide = () => {
         currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         showSlide(currentIndex);
     };
 
-    // Função para iniciar o autoplay
+    //Função para autoplay
     const startAutoPlay = () => {
         slideInterval = setInterval(nextSlide, autoPlayInterval);
     };
 
-    // Função para parar o autoplay
+    //Função para parar
     const stopAutoPlay = () => {
         clearInterval(slideInterval);
     };
 
-    //Função para passar o slide 
+    //Função para passar slides
     nextButton.addEventListener("click", () => {
         stopAutoPlay();  
         nextSlide();     
@@ -61,12 +61,12 @@ document.addEventListener("DOMContentLoaded", function() {
         startAutoPlay(); 
     });
 
-    // Iniciar autoplay  Daa página
+   //Iniciar o autoplay da loja 
     startAutoPlay();
     showSlide(currentIndex); 
 });
 
- // Mostrar o botão 
+ //Mostrar botão 
 window.onscroll = function() {mostrarBotao()};
 
 function mostrarBotao() {
@@ -77,9 +77,9 @@ function mostrarBotao() {
         button.style.display = "none";
     }
 }
-// fim carrossel
+//fim carrosel
 
-// Função do scroll apos eu rolar um para abaixo */
+
 
   // Função para verificar se um elemento está visível na tela
   function isInViewport(element) {

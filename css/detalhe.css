@@ -14,7 +14,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #e3e4e3;
 }
 
 .header {
@@ -178,12 +178,12 @@ body {
 }
 
 
-
 /* Detalhes do produto */
 .product-container {
     display: flex;
     margin-top: 100px;
     padding: 20px;
+    height: 900px;
 }
 
 .product-gallery {
@@ -192,7 +192,7 @@ body {
 }
 
 .product-gallery .main-image {
-    width: 100%;
+    width: 95%;
     height: 600px;
     margin-bottom: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
@@ -216,14 +216,14 @@ body {
 .thumbs {
     display: flex;
     gap: 10px;
-    justify-content: center;
+    
 }
 
 .thumbs img {
     width: 150px;
     height: auto;
     cursor: pointer;
-    margin-right: 50px;
+    margin: 30px;
 }
 
 .thumbs img:hover {
@@ -242,6 +242,7 @@ input#quantity {
 
 .product-details {
     flex: 1;
+    max-height: 930px;
     margin-left: 40px;
     background-color: #fff;
     padding: 50px;
@@ -270,15 +271,49 @@ input#quantity {
     letter-spacing: 1px;
 }
 .preço {
-    font-size: 24px;
+    
+    font-size: 33px;
     color: #27ae60;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+hr{
+    background-color: #0d6717;
+    height: 3px;
+}
+.hr2{
+    background-color: #0d6717;
+    height: 4px;
+}
+.vista{
+    
+    font-size: 33px;
+    color: #1a8e4a;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cartao{
+    font-size: 33px;
+    color: #ed0b0bc1;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.preçoC{
+    
+    font-size: 33px;
+    color: #851212c1;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a5959;
+    font-size: 16px;
+}
 .parcelas {
     color: #2c3e50;
     margin-top: 5px;
+    font-size: 21px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -288,7 +323,7 @@ label{
 }
 .quantidade {
     margin: 20px 0;
-    
+    font-size: 22px;
 }
 input{
     padding: 4px;
@@ -296,16 +331,30 @@ input{
     border-color: #27ae60;
     border-radius: 5px;
 }
-
+section{
+    margin: auto;
+    text-align: center;
+}
+.TextoInfo{
+    margin-top: 100px;
+    
+    font-family: 'Barlow Semi Condensed';
+    letter-spacing: 1px;
+    font-size: 35px;
+    color: #276441;
+}
 .whatsapp-btn {
     background-color: #0d6717;
     color: white;
     border-radius: 5px;
+    margin-top: 90px;
     padding: 15px 30px;
     border: none;
     font-size: 18px;
     cursor: pointer;
+    width: 100%;
     position: relative;
+    padding: 30px;
     overflow: hidden;
     transition: color 0.4s ease;
 }
@@ -332,6 +381,7 @@ input{
 
 .whatsapp-btn a {
     color: inherit;
+    font-size: 20px;
     text-decoration: none;
     position: relative; /* Adiciona um contexto de empilhamento */
     z-index: 1; /* Coloca o texto acima do fundo */
@@ -339,7 +389,7 @@ input{
  
 
 
-@media (max-width: 768px) {
+@media (max-width: 1408px) {
     .product-container {
         flex-direction: column;
         align-items: center;
@@ -352,6 +402,9 @@ input{
 
     .thumbs {
         justify-content: center;
+    }
+    section{
+        margin-top: 900px;
     }
 }
 

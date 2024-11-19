@@ -9,7 +9,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 body > header {
-  background: #6b6a25;
+  background: #147725;
   color: rgb(255, 255, 255);
   font-size: 24px;
   padding: 20px 0;
@@ -107,7 +107,7 @@ table tbody tr td {
 }
 
 .remove {
-  background: #b62e2e;
+  background: #a52828;
   border: 0;
   width: 30px;
   height: 30px;

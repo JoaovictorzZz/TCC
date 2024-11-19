@@ -4,7 +4,6 @@ document.getElementById("hamburger").addEventListener("click" , function(){
 });
 //
 
-
 //carrosel
 document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll(".carousel-slide");
@@ -280,6 +279,7 @@ function initMap() {
 }
 
 // engrenagem 
+
 // Seleciona todos os elementos que precisam de animação
 const elementosAnimados = document.querySelectorAll('.animate-up');
 

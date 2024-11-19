@@ -32,7 +32,7 @@ const totalItems = document.querySelectorAll('.product-card').length;
 const itemWidth = 270; // Largura do produto
 
 function updateCarousel() {
-    const maxTranslateX = 1340 // Limite máximo de pixels para o reset
+    const maxTranslateX = 1340 //renicia o carrosel
 
     // Calcula o deslocamento atual com base no índice e largura do item
     const translateX = currentIndex * itemWidth;
@@ -67,7 +67,7 @@ function nextSlide() {
            button.style.display = "none";
        }
    }
-
+   
    // Função para ir ao topo 
    function voltarAoTopo() {
        window.scrollTo({top: 0, behavior: 'smooth'});

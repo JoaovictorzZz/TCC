@@ -433,6 +433,22 @@ body{
         flex: 1 0 100%; /* 1 produto por vez em telas pequenas */
     }
 }
+@media (max-width: 1286px){
+    .banner >a> img{
+        height: 450px;
+    }
+}
+@media (max-width: 958px){
+    .banner>a>img{
+        margin-top: 20px;
+        height: 360px;
+    }
+}
+@media (max-width: 681px){
+    .banner>a>img{
+        height: 300px;
+    }
+}
 
 .banner-promo {
     position: relative;

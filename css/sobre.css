@@ -233,22 +233,95 @@
 
 /*Elementos carrosel e fotos e texto */ 
 body {
-    background: #eaeaea;
-    overflow-x: hidden;
+    background-color: #fff;
+    
 }
 
+.hist {
+    display: flex;
 
-/*footer*/
+}
 
+.hist > h1 {
+    color: #218838;
+    margin-top: 140px;
+    margin-left: 200px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.hist > p {
+    color: #000000;
+    text-align: left;
+    width: 600px;
+    margin-top: 200px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -245px;
+}
+
+.hist > img {
+    width: 600px;
+    margin-left: 200px;
+    margin-top: 130px;
+}
+
+.hist2 > img {
+    margin-top: -310px;
+    width: 600px;
+    margin-left: 200px;
+}
+
+.hist2 > h1 {
+
+    color: #218838;
+    margin-top: 100px;
+    margin-right: 287px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.hist2 > p {
+    color: #000000;
+    text-align: left;
+    width: 600px;
+    margin-left: 200px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1060px;
+}
+
+ /*rodape*/
+ .containerr{
+    max-width: 1170px;
+    margin:auto;
+}
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
 .footer{
+    margin-top: 150px;
     background-color: #24262b;
-    padding: 70px ;
-    margin-top: 800px;  
+    padding: 70px 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 .footer-col{
    width: 25%;
    padding: 0 15px;
+ 
 }
 .footer-col h4{
     font-size: 18px;
@@ -318,6 +391,6 @@ body {
 }
 }
  /* fim do rodape*/
-
+ 
 
 

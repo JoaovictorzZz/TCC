@@ -220,3 +220,36 @@ aside {
     }
   }
 }
+
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Adiciona quebra de linha nos itens */
+  
+  section {
+    flex: 1 1 100%; /* Flexível e com base de 100% da largura */
+  }
+
+  aside {
+    min-width: 250px;
+    max-width: 100%; /* Garante que o aside não ultrapasse 100% da largura */
+  }
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 12px;
+
+    th, td {
+      padding: 10px 5px;
+    }
+  }
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  font-size: 14px;
+  padding: 10px 15px;
+}

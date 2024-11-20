@@ -1,4 +1,5 @@
 // Função para atualizar o total
+console.log("JavaScript está funcionando!");
 function updateTotal() {
   let total = 0;
 

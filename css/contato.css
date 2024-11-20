@@ -271,7 +271,7 @@ body {
     overflow: hidden;
     max-width: 1000px;
     width: 90%;
-    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.158);
+    box-shadow: 1px 1px 1px 3px rgba(255, 255, 255, 0.158);
 }
 .image img {
     max-width: 100%;

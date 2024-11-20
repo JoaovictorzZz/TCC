@@ -226,8 +226,9 @@ body {
     padding-top: 150px;
     border-radius: 3px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 20px auto;
+    max-height: 1200px;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
@@ -319,7 +320,7 @@ body {
   /* Telas médias (tablets, largura até 768px) */
   @media (max-width: 768px) {
     .slide {
-      height: 400px;
+      height: 500px;
       font-size: 1.5rem;
     }
     .slide>p{

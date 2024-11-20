@@ -617,8 +617,8 @@ strong{
     font-family: "Josefin Sans", sans-serif;
     font-weight: normal;
     background: linear-gradient(45deg, #00fa7de1, #ffffff);
-    -webkit-background-clip: text; /* Aplica o clip ao texto */
-    -webkit-text-fill-color: transparent; /* Preenche o texto com o degradê */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
 }
 
 .subtitle {

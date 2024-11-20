@@ -44,13 +44,13 @@ let currentSlide = 0;
 
 function setSlide(index) {
   const slides = document.querySelector('.carousel-slides');
-  const dots = document.querySelectorAll('.dot');
+  const dots = document.querySelectorAll('.bot');
 
   // Atualiza a posição do carrossel
   slides.style.transform = `translateX(-${index * 100}%)`;
 
   // Atualiza os indicadores
-  dots.forEach(dot => dot.classList.remove('active'));
+  dots.forEach(bot => bot.classList.remove('active'));
   dots[index].classList.add('active');
 
   currentSlide = index;

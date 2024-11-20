@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../css/carrinho.style/styles.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Carrinho de Compras</title>
-  <script src="../js/models/carrinho.js"></script>
+
 </head>
 <body>
   <header>
@@ -35,7 +35,7 @@
                   <img src="https://picsum.photos/100/120" alt="">
                   <div class="info">
                     <div class="name">Nome do produto</div>
-                    <div class="category">Categoria</div>
+                    
                   </div>
                 </div>
               </td>
@@ -59,8 +59,7 @@
                   <img src="https://picsum.photos/100/120" alt="">
                   <div class="info">
                     <div class="name">Nome do produto</div>
-                    <div class="category">Categoria</div>
-                  </div>
+                   
                 </div>
               </td>
               <td>R$ 120</td>
@@ -75,29 +74,7 @@
               <td>
                 <button class="remove"><i class='bx bx-x'></i></button>
               </td>
-            </tr> 
 
-            <tr>
-              <td>
-                <div class="product">
-                  <img src="https://picsum.photos/100/120" alt="">
-                  <div class="info">
-                    <div class="name">Nome do produto</div>
-                    <div class="category">Categoria</div>
-                  </div>
-                </div>
-              </td>
-              <td>R$ 120</td>
-              <td>
-                <div class="qty">
-                  <button><i class='bx bx-minus'></i></button>
-                  <span>2</span>
-                  <button><i class='bx bx-plus'></i></button>
-                </div>
-              </td>
-              <td>R$ 240</td>
-              <td>
-                <button class="remove"><i class='bx bx-x'></i></button>
               </td>
             </tr>
           </tbody>
@@ -108,12 +85,11 @@
           <header>Resumo da compra</header>
           <div class="info">
             <div>
-              <span>Sub-total</span><span>R$ 418</span>
+              <p>Sub-total: <span id="summary-subtotal">R$ 0.00</span></p>
             </div>
           </div>
           <footer>
-            <span>Total</span>
-            <span>R$ 418</span>
+            <p>Total: <span id="summary-total">R$ 0.00</span></p>
           </footer>
         </div>
        <button><a href="https://web.whatsapp.com/">Finalizar compras</a></button>
@@ -154,5 +130,6 @@
         </div>
     </div>
 </footer>
+<script src="../js/models/carrinho.js"></script>
 </body>
 </html>

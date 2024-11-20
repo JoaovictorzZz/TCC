@@ -1,54 +1,52 @@
+// Função para atualizar o total
 function updateTotal() {
-    let total = 0;
-    
-    // Percorre cada linha da tabela e calcula o subtotal
-    document.querySelectorAll('tr').forEach(row => {
-      const priceElement = row.querySelector('.price');
-      const quantityElement = row.querySelector('.quantity');
-      
-      if (priceElement && quantityElement) {
-        const price = parseFloat(priceElement.getAttribute('data-price')); // Preço original
-        const quantity = parseInt(quantityElement.textContent);
-        total += price * quantity;
-      }
-    });
-  
-    // Atualiza o valor total na caixa de resumo da compra
-    document.getElementById('summary-total').textContent = `R$ ${total.toFixed(2)}`;
-    document.getElementById('summary-subtotal').textContent = `R$ ${total.toFixed(2)}`; // Se precisar de subtotal
-  }
-  
-  // Função para remover o produto
-  document.querySelectorAll('.remove').forEach(button => {
-    button.addEventListener('click', function () {
-      this.closest('tr').remove();
-      updateTotal(); // Atualiza o total ao remover
-    });
-  });
-  
-  // Função para aumentar a quantidade
-  document.querySelectorAll('.plus').forEach(button => {
-    button.addEventListener('click', function () {
-      const quantityElement = this.previousElementSibling;
-      let quantity = parseInt(quantityElement.textContent);
-      quantityElement.textContent = quantity + 1;
-      updateTotal(); // Atualiza o total ao aumentar a quantidade
-    });
-  });
-  
-  // Função para diminuir a quantidade
-  document.querySelectorAll('.minus').forEach(button => {
-    button.addEventListener('click', function () {
-      const quantityElement = this.nextElementSibling;
-      let quantity = parseInt(quantityElement.textContent);
-      if (quantity > 1) {
-        quantityElement.textContent = quantity - 1;
-        updateTotal(); // Atualiza o total ao diminuir a quantidade
-      }
-    });
-  });
-  
-  // Atualiza o total inicial ao carregar a página
-  updateTotal();
+  let total = 0;
 
-  
+  // Itera pelas linhas dos produtos
+  document.querySelectorAll('tr').forEach(row => {
+    const priceElement = row.querySelector('.price');
+    const quantityElement = row.querySelector('.quantity');
+
+    if (priceElement && quantityElement) {
+      const price = parseFloat(priceElement.getAttribute('data-price')) || 0; // Valor padrão
+      const quantity = parseInt(quantityElement.textContent) || 0;
+      total += price * quantity;
+    }
+  });
+
+  // Atualiza o resumo de compra
+  const summaryTotal = document.getElementById('summary-total');
+  const summarySubtotal = document.getElementById('summary-subtotal');
+  if (summaryTotal) summaryTotal.textContent = `R$ ${total.toFixed(2)}`;
+  if (summarySubtotal) summarySubtotal.textContent = `R$ ${total.toFixed(2)}`;
+}
+
+// Função para alterar a quantidade
+function changeQuantity(element, delta) {
+  const quantityElement = element.closest('tr').querySelector('.quantity');
+  if (quantityElement) {
+    let quantity = parseInt(quantityElement.textContent) || 0;
+    quantity = Math.max(1, quantity + delta); // Garante que a quantidade não fique menor que 1
+    quantityElement.textContent = quantity;
+    updateTotal();
+  }
+}
+
+// Delegação de eventos para "+" e "-" botões
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('plus')) {
+    changeQuantity(event.target, 1); // Aumenta a quantidade
+  } else if (event.target.classList.contains('minus')) {
+    changeQuantity(event.target, -1); // Diminui a quantidade
+  } else if (event.target.classList.contains('remove')) {
+    // Remove a linha do produto
+    const row = event.target.closest('tr');
+    if (row) {
+      row.remove();
+      updateTotal();
+    }
+  }
+});
+
+// Atualiza o total inicial ao carregar a página
+updateTotal();

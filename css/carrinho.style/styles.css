@@ -69,6 +69,8 @@ table tbody tr td {
 }
 .product img {
   border-radius: 6px;
+  width: 200px;
+  height: 150px;
 }
 .product .info {
   margin-left: 20px;
@@ -178,6 +180,20 @@ aside > button {
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
 }
+aside > button2 {
+  border: 0;
+  padding: 12px 0;
+  background: #0c7c9e;
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 16px;
+  display: block;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+}
+
+
 .containerr{
   max-width: 1170px;
   margin:auto;

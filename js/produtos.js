@@ -37,7 +37,7 @@ function updateCarousel() {
     // Calcula o deslocamento atual com base no índice e largura do item
     const translateX = currentIndex * itemWidth;
 
-    // Verifica se ultrapassou o limite de 1200px
+    // Verifica se ultrapassou o limite de px
     if (translateX >= maxTranslateX) {
         currentIndex = 0; // Reseta para o início
     }

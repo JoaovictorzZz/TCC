@@ -3,32 +3,7 @@ document.getElementById("hamburger").addEventListener("click", function()  {
     document.body.classList.toggle('menu-active');
 });
 //
-let next = document.querySelector('.next');
-let prev = document.querySelector('.prev');
 
-// Função para controlar o carrossel
-function updateCarousel() {
-    let items = document.querySelectorAll('.item');
-    document.querySelector('.slide').appendChild(items[0]);
-}
-
-function updateCarouselReverse() {
-    let items = document.querySelectorAll('.item');
-    document.querySelector('.slide').prepend(items[items.length - 1]);
-}
-
-// Executa a função de rotação apenas se a tela for maior que 868px
-next.addEventListener('click', function () {
-    if (window.innerWidth > 868) {
-        updateCarousel();
-    }
-});
-
-prev.addEventListener('click', function () {
-    if (window.innerWidth > 868) {
-        updateCarouselReverse();
-    }
-});
 
 // Seleciona todos os links de navegação
 const navLinks = document.querySelectorAll('.nav-list a');
@@ -65,4 +40,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+let currentSlide = 0;
+
+function setSlide(index) {
+  const slides = document.querySelector('.carousel-slides');
+  const dots = document.querySelectorAll('.dot');
+
+  // Atualiza a posição do carrossel
+  slides.style.transform = `translateX(-${index * 100}%)`;
+
+  // Atualiza os indicadores
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+
+  currentSlide = index;
+}
+
+// Inicializar com o primeiro slide ativo
+document.addEventListener('DOMContentLoaded', () => setSlide(0));
 

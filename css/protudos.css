@@ -179,6 +179,14 @@ body{
                 transform: translateY(0);
             }
         }
+        .products{
+            margin-left: ;
+            text-align: center;
+        }
+        .product-card{
+            margin: auto;
+            text-align: center;
+        }
     }
     
     

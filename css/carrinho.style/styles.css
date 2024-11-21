@@ -3,18 +3,26 @@
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 
 body {
   background-color: #f6f6f6;
   font-family: "Lato", sans-serif;
 }
 body > header {
-  background: #147725;
+  background: #181818;
   color: rgb(255, 255, 255);
   font-size: 40px;
-  padding: 20px 0;
+  height: 200px;
   display: flex;
   justify-content: center;
+}
+header>img{
+  width: 250px;
+  margin-top: -20px;
+  height: 250px;
 }
 body > main {
   background: #ffffff;
@@ -177,6 +185,7 @@ aside > button {
   letter-spacing: 1px;
   font-size: 16px;
   display: block;
+  border-radius: 5px;
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
 }
@@ -185,6 +194,7 @@ aside > button2 {
   padding: 20px 0;
   background: #0c7c9e;
   width: 100%;
+  border-radius: 5px;
   letter-spacing: 1px;
   font-size: 16px;
   display: block;

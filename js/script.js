@@ -76,6 +76,11 @@ function mostrarBotao() {
         button.style.display = "none";
     }
 }
+// Função para ir ao topo 
+function voltarAoTopo() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 //fim carrosel
 
 

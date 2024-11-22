@@ -313,12 +313,12 @@ tr {
   margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1108px) {
   body {
     > header {
       font-size: px;
       padding: 15px 0;
-    }
+    } 
     
     > main {
       padding: 0 15px;

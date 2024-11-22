@@ -175,6 +175,7 @@ body {
             transform: translateY(0);
         }
     }
+    
 }
 
 
@@ -355,6 +356,7 @@ section{
     color: #0ea851;
     margin-bottom: 60px;
 }
+
 .left{
     text-align: left;
 }

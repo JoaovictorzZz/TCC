@@ -140,7 +140,7 @@ body {
         transform: translateY(-20px);
         transition: opacity 0.5s ease, transform 0.5s ease;
     }
-
+    
     .hamburger {
         display: flex;
         margin-right: 50px;

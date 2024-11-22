@@ -34,7 +34,7 @@ function changeQuantity(element, delta) {
 }
 
 // Delegação de eventos para "+" e "-" botões
-document.addEventListener('click', (event) => {
+document.addEventListener('click', function(event) {
   if (event.target.classList.contains('plus')) {
     changeQuantity(event.target, 1); // Aumenta a quantidade
   } else if (event.target.classList.contains('minus')) {

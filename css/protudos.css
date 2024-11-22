@@ -180,7 +180,7 @@ body{
             }
         }
         .products{
-            margin-left: ;
+            margin-left: 0px;
             text-align: center;
         }
         .product-card{
@@ -428,6 +428,30 @@ body{
     color: #fff;
     padding: 10px;
     cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 100%; /* Ocupa toda a largura da tela */
+    }
+
+    .product-card {
+        flex: 1 0 100%; /* Mostra um produto por vez em telas pequenas */
+        max-width: 100%; /* Garante que não ultrapasse os limites */
+        margin: 0 5px; /* Ajusta o espaçamento */
+    }
+
+    .carousel {
+        gap: 10px; /* Espaço entre os produtos */
+    }
+}
+    
+
+@media (max-width: 412px) {
+    .product-card {
+        flex: 1 0 50%; /* 2 produtos por vez em telas médias */
+    }
 }
 
 @media (max-width: 768px) {

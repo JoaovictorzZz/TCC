@@ -453,5 +453,104 @@
     "https://exemplo.com/imagem3.jpg"
   ]
 }
+,
+{
+  "id": "Máquina de solda inverter Boxer Flama 161 BV azul e preta 110V/220V",
+  "nome": "Máquina de solda inverter Boxer Flama 161 BV azul e preta 110V/220V",
+  "modelo": "BASIC 4.1/2",
+  "marca": "Boxer",
+  "descricao": "Inversora de Solda BOXER FLAMA 161BV MMA/Tig Bivolt. A Máquina de Solda Inversora FLAMA 161 BV é a Inversora Ideal para o Serralheiro. Foi Projetada Para os Mais Exigentes Profissionais de Montagens Metalúrgicas.",
+  "especificacoes": [
+    "Tensão: 110/220V",
+    "Amperagem: 110 v - 110 a @ 45% 160A @ 60%",
+    "Eletrodos: 110V - até 2.5 mm / 220V até 3,25mm",
+    "Engate: 9mm"
+  ],
+  "itensAcompanha": [
+    "Disco de Corte"
+  ],
+  "garantia": "1 ano de garantia direto com o fabricante",
+  "preco": "R$ 738,90 ",
+  "parcelas": "Até 12x R$104,21",
+  "imagens": [
+    "",
+    "https://exemplo.com/imagem2.jpg",
+    "https://exemplo.com/imagem3.jpg"
+  ]
+}
+,
+{
+  "id": "Óculos De Proteção",
+  "nome": "Óculos De Proteção Napoli Incolor - Steelflex Cor da lente Branco e incolor",
+  "modelo": "VS205110",
+  "marca": "Steelflex",
+  "descricao": "Os Óculos De Proteção Uv Steelflex Napoli STF VS205110 Incolor são a escolha perfeita para quem busca segurança e conforto. Com hastes ajustáveis, eles se adaptam perfeitamente ao formato do seu rosto, garantindo um uso confortável durante todo o dia.",
+  "especificacoes": [
+    "Óculos De Proteção"
+  ],
+  "itensAcompanha": [
+    "Óculos De Proteção"
+  ],
+  "garantia": "1 ano de garantia direto com o fabricante",
+  "preco": "R$ 15,90",
+  "parcelas": "Até 12x R$104,21",
+  "imagens": [
+    "",
+    "https://exemplo.com/imagem2.jpg",
+    "https://exemplo.com/imagem3.jpg"
+  ]
+}
+,
+{
+  "id": "Luva Couro",
+  "nome": "Luva Couro Raspa P7 Soldador Epi Cano Curto Segurança",
+  "modelo": "BASIC 4.1/2",
+  "marca": "Marfe Luvas",
+  "descricao": "Luva Cano Curto",
+  "especificacoes": [
+    "Material: Raspa",
+    "CA: 42738",
+    "Raspa de Alta Qualidade",
+    "Confortável",
+    "Resistente"
+  ],
+  "itensAcompanha": [
+    "Luva de couro"
+  ],
+  "garantia": "1 ano de garantia direto com o fabricante",
+  "preco": "R$ 10,90",
+  "parcelas": "Até 12x R$104,21",
+  "imagens": [
+    "",
+    "https://exemplo.com/imagem2.jpg",
+    "https://exemplo.com/imagem3.jpg"
+  ]
+}
+,
+{
+  "id": "Máscara respirador",
+  "nome": "Camper PFF2 kit 50 unidade máscara respirador com válvula cor azul",
+  "modelo": "BASIC 4.1/2",
+  "marca": "Marfe Luvas",
+  "descricao": "O Respirador PFF2 com Válvula Camper é uma excelente escolha para quem necessita de um respirador que purifica o ar. ",
+  "especificacoes": [
+    "C.A: 38.944",
+    "Clipe nasal: fios plásticos com estrutura metálica",
+    "Elástico: poliéster e elastodieno",
+    "Certificações Inmetro: OCP 0003",
+    "Cor externa: azul"
+  ],
+  "itensAcompanha": [
+    "CONTEM 50 MÁSCARAS COM VÁLVULA"
+  ],
+  "garantia": "1 ano de garantia direto com o fabricante",
+  "preco": "R$ 57,68",
+  "parcelas": "Até 12x R$104,21",
+  "imagens": [
+    "",
+    "https://exemplo.com/imagem2.jpg",
+    "https://exemplo.com/imagem3.jpg"
+  ]
+}
 ]
   

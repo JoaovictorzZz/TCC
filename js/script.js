@@ -1,4 +1,4 @@
-//hamburger
+//hamburger pega o sua classes  e coloca um função para qunado - ativar o button
 document.getElementById("hamburger").addEventListener("click" , function(){
     document.body.classList.toggle("menu-active")
 });
@@ -11,12 +11,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const nextButton = document.querySelector(".carousel-button.next");
     let currentIndex = 0;
     const autoPlayInterval = 5000; //slides 5 segundos
+
     let slideInterval;
 
     //Função exibir slide
-    const showSlide = (index) => {
-        slides.forEach((slide, i) => {
+    const showSlide = function(index) {
+        slides.forEach(function(slide, i) {
             slide.classList.remove("current", "previous");
+            //condição 
+            //length retorna o numero de elementos
             if (i === index) {
                 slide.classList.add("current");
             } else if (i === (index + slides.length - 1) % slides.length) {
@@ -25,36 +28,36 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     };
 
-    //Função proximo slide
-    const nextSlide = () => {
+    //Função de passar o slide
+    const nextSlide = function() {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
     };
 
     //Função para slide anterior
-    const prevSlide = () => {
+    const prevSlide = function() {
         currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         showSlide(currentIndex);
     };
 
     //Função para autoplay
-    const startAutoPlay = () => {
+    const startAutoPlay =  function(){
         slideInterval = setInterval(nextSlide, autoPlayInterval);
     };
 
     //Função para parar
-    const stopAutoPlay = () => {
+    const stopAutoPlay = function(){
         clearInterval(slideInterval);
     };
 
     //Função para passar slides
-    nextButton.addEventListener("click", () => {
+    nextButton.addEventListener("click", function() {
         stopAutoPlay();  
         nextSlide();     
         startAutoPlay(); 
     });
 
-    prevButton.addEventListener("click", () => {
+    prevButton.addEventListener("click", function() {
         stopAutoPlay();  
         prevSlide();     
         startAutoPlay(); 
@@ -68,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
  //Mostrar botão 
 window.onscroll = function() {mostrarBotao()};
 
+//Função de mostrar o botao quando descer 100px da pagina 
 function mostrarBotao() {
     const button = document.getElementById("topoButton");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -95,7 +99,7 @@ function voltarAoTopo() {
   function handleScroll() {
     const products = document.querySelectorAll('.product-card');
     
-    products.forEach(product => {
+    products.forEach(function(product) {
       if (isInViewport(product)) {
         product.classList.add('visible');
       }
@@ -143,17 +147,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.body.classList.add('fade-in');
 
-    navLinks.forEach(link => {
+    navLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault(); 
-            
             const targetUrl = this.href;
-
-         
             document.body.classList.add('fade-out');
-
-            
-            setTimeout(() => {
+            setTimeout(function() {
                 window.location.href = targetUrl;
             }, 500);
         });
@@ -204,8 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
     checkScroll(); 
 });
 
-
-
+//adicionando o evento de subir para cima 
 document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.animate-up');
     
@@ -230,6 +228,7 @@ function updateCarousel() {
 function prevSlide() {
     const containerWidth = document.querySelector('.carousel-container').clientWidth;
     const itemsPerView = Math.floor(containerWidth / 250);
+    //condição 
     if (currentIndex > 0) {
         currentIndex--;
     } else {
@@ -241,6 +240,7 @@ function prevSlide() {
 function nextSlide() {
     const containerWidth = document.querySelector('.carousel-container').clientWidth;
     const itemsPerView = Math.floor(containerWidth / 250);
+    //condição 
     if (currentIndex < totalItems - itemsPerView) {
         currentIndex++;
     } else {
@@ -276,11 +276,11 @@ window.addEventListener('scroll', lidarComScroll);
 
 // Inicializa o Google Maps
 function initMap() {
-    var mapOptions = {
+    let mapOptions = {
         center: { lat: -23.5505, lng: -46.6333 }, 
         zoom: 12
     };
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    let map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
 
 // engrenagem 
@@ -296,7 +296,7 @@ function estaNaTela(elemento) {
 
 // Função para adicionar a classe 'in-view' aos elementos quando eles estiverem visíveis
 function ativarAnimacao() {
-    elementosAnimados.forEach(elemento => {
+    elementosAnimados.forEach(function(elemento) {
         if (estaNaTela(elemento)) {
             elemento.classList.add('in-view');
         }

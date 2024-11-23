@@ -1,6 +1,6 @@
 [
   {
-    "id": "111",
+    "id": "1",
     "nome": "Furadeira Parafusadeira De Impacto Bateria 18v Wesco Ws2319",
     "modelo": "WS2319",
     "marca": "Wesco",
@@ -23,15 +23,16 @@
     "preco": "1074.90",
     "parcelas": "Até 12x R$104,21",
     "imagens": [
-      "",
-      "https://exemplo.com/imagem2.jpg",
-      "https://exemplo.com/imagem3.jpg"
+      "../img/produtos/01/foto 1.webp",
+       "../img/produtos/01/foto 1.webp",
+      "../img/produtos/01/foto 2.webp",
+      "../img/produtos/01/foto 3.webp"
     ]
   }
 
 ,
 {
-  "id": "Parafusadeira Furadeira de Impacto Wesco 3/8 Carregador Bivolt",
+  "id": "2",
   "nome": "Parafusadeira Furadeira de Impacto Wesco 3/8 Carregador Bivolt",
   "modelo": "WS2547",
   "marca": "Wesco",
@@ -54,14 +55,15 @@
   "preco": "483,90",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/02/foto 1.webp",
+    "../img/produtos/02/foto 2.webp",
+    "../img/produtos/02/foto 3.webp",
+    "../img/produtos/02/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Esmerilhadeira Angular Corte Desbaste 900w Wesco 220v Ws4750",
+  "id": "3",
   "nome": "Esmerilhadeira Angular Corte Desbaste 900w Wesco 220v Ws4750",
   "modelo": "WS4750",
   "marca": "Wesco",
@@ -84,14 +86,15 @@
   "preco": "R$ 289,52",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/03/foto 1.webp",
+    "../img/produtos/03/foto 2.webp",
+    "../img/produtos/03/foto 3.webp",
+    "../img/produtos/03/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Esmerilhadeira Angular 230mm 9 Ws4703 220v Wesco Cor Azul-turquesa Frequência 60 Hz",
+  "id": "4",
   "nome": "Esmerilhadeira Angular 230mm 9 Ws4703 220v Wesco Cor Azul-turquesa Frequência 60 Hz",
   "modelo": "WS4750",
   "marca": "Wesco",
@@ -115,15 +118,16 @@
   "preco": "R$ 476,08",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/04/foto 1.webp",
+    "../img/produtos/04/foto 2.webp",
+    "../img/produtos/04/foto 3.webp",
+    "../img/produtos/04/foto 1.webp"
   ]
 }
 
 ,
 {
-  "id": "222",
+  "id": "5",
   "nome": "Martelete Perfurador Demolidor Sds Plus 4,5j 1050w Wesco",
   "modelo": "WS4750",
   "marca": "Wesco",
@@ -148,15 +152,16 @@
   "preco": "R$ 629,90",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/05/foto 1.webp",
+    "../img/produtos/05/foto 2.webp",
+    "../img/produtos/05/foto 3.webp",
+    "../img/produtos/05/foto 1.webp"
   ]
 }
 
 ,
 {
-  "id": "Chave De Impacto 1/2 Brushless",
+  "id": "6",
   "nome": "Chave De Impacto 1/2 Brushless 18v Bivolt Ws2382 Wesco",
   "modelo": "WS4750",
   "marca": "Wesco",
@@ -179,15 +184,16 @@
   "preco": "R$ 951,82",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/06/foto 1.webp",
+    "../img/produtos/06/foto 2.webp",
+    "../img/produtos/06/foto 3.webp",
+    "../img/produtos/06/foto 1.webp"
   ]
 }
 
 ,
 {
-  "id": "Lixadeira profissional roto orbital Wesco Profissional ",
+  "id": "7 ",
   "nome": "Lixadeira profissional roto orbital Wesco Profissional WS4265 azul-turquesa 400W 220V",
   "modelo": "WS4265",
   "marca": "Wesco",
@@ -210,15 +216,16 @@
   "preco": "R$ 297,89",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/07/foto 1.webp",
+    "../img/produtos/07/foto 2.webp",
+    "../img/produtos/07/foto 3.webp",
+    "../img/produtos/07/foto 1.webp"
   ]
 }
 
 ,
 {
-  "id": "Máquina solda inverter Touch 150 BV branco",
+  "id": "8",
   "nome": "Máquina solda inverter Touch 150 BV branco/azul 110V/220V Profissional Boxer",
   "modelo": "TOUCH 150BV",
   "marca": "Boxer",
@@ -242,19 +249,20 @@
   "preco": "R$ 1.008,17",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/08/foto 1.webp",
+    "../img/produtos/08/foto 2.webp",
+    "../img/produtos/08/foto 3.webp",
+    "../img/produtos/08/foto 1.webp"
   ]
 }
 
 ,
 {
-  "id":  "333",
+  "id":  "9",
   "nome": "Máquina de solda inverter Boxer Flama 201 BV azul e preta 127/220V",
-  "modelo": "TOUCH 150BV",
+  "modelo": "TOUCH 201BV",
   "marca": "Boxer",
-  "descricao": "Inversora de Solda BOXER FLAMA 161BV MMA/Tig Bivolt. A Máquina de Solda Inversora FLAMA 161 BV é a Inversora Ideal para o Serralheiro. Foi Projetada Para os Mais Exigentes Profissionais de Montagens Metalúrgicas.",
+  "descricao": "Inversora de Solda BOXER FLAMA 201BV MMA/Tig Bivolt. A Máquina de Solda Inversora FLAMA 161 BV é a Inversora Ideal para o Serralheiro. Foi Projetada Para os Mais Exigentes Profissionais de Montagens Metalúrgicas.",
   "especificacoes": [
     "Alimentação: Elétrica",
     "Tensão: 110/220V",
@@ -274,17 +282,18 @@
   "preco": "R$ 1.206",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/09/foto 1.webp",
+    "../img/produtos/09/foto 2.webp",
+    "../img/produtos/09/foto 3.webp",
+    "../img/produtos/09/foto 1.webp"
   ]
 }
 
 ,
 {
-  "id": "Máquina de solda inverter Boxer Flama 161 BV azul e preta",
+  "id": "10",
   "nome": "Máquina de solda inverter Boxer Flama 161 BV azul e preta 110V/220V",
-  "modelo": "TOUCH 150BV",
+  "modelo": "TOUCH 161BV",
   "marca": "Boxer",
   "descricao": "Inversora de Solda BOXER FLAMA 161BV MMA/Tig Bivolt. A Máquina de Solda Inversora FLAMA 161 BV é a Inversora Ideal para o Serralheiro. Foi Projetada Para os Mais Exigentes Profissionais de Montagens Metalúrgicas.",
   "especificacoes": [
@@ -306,13 +315,14 @@
   "preco": "R$ 738,90",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/10/foto 1.webp",
+    "../img/produtos/10/foto 2.webp",
+    "../img/produtos/10/foto 3.webp",
+    "../img/produtos/10/foto 1.webp"
   ]
 },
 {
-  "id": "Trena De Bolso Economic 8mt L525cme Lufkin ",
+  "id": "11 ",
   "nome": "Trena De Bolso Economic 8mt L525cme Lufkin ",
   "modelo": "L525CME",
   "marca": "Lufkin",
@@ -329,14 +339,15 @@
   "preco": "R$ 48,63",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/11/foto 1.webp",
+    "../img/produtos/11/foto 2.webp",
+    "../img/produtos/11/foto 3.webp",
+    "../img/produtos/11/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Alicate Universal",
+  "id": "12",
   "nome": "Gedore R28301200 1000V Cor Vermelho Alicate Universal 8 Pol Cromo Vanádio",
   "modelo": "R28301200",
   "marca": "Gedore",
@@ -351,14 +362,15 @@
   "preco": "R$ 38,11",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+   "../img/produtos/12/foto 1.webp",
+    "../img/produtos/12/foto 2.webp",
+    "../img/produtos/12/foto 3.webp",
+    "../img/produtos/12/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Chaves Torx",
+  "id": "13",
   "nome": "Jg Chaves Torx Gedore T10 T15 T20 T25 T27 T30 T40 T45 T50",
   "modelo": "R28301200",
   "marca": "Gedore",
@@ -373,14 +385,15 @@
   "preco": "R$ 149,90 ",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/13/foto 1.webp",
+    "../img/produtos/13/foto 2.webp",
+    "../img/produtos/13/foto 3.webp",
+    "../img/produtos/13/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Lanterna Tática",
+  "id": "14",
   "nome": "Lanterna Tática Holofote BMax Tocha Led P90 Muito Forte Cor da luz Branco",
   "modelo": "R28301200",
   "marca": "BMax",
@@ -398,14 +411,15 @@
   "preco": "R$ 69,90 ",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/14/foto 1.webp",
+    "../img/produtos/14/foto 2.webp",
+    "../img/produtos/14/foto 3.webp",
+    "../img/produtos/14/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Disco de Corte",
+  "id": "15",
   "nome": "50 Discos De Corte 4.1/2 X 1,0mm - Tyrolit Basic 2 Em 1 Cor Cinza",
   "modelo": "BASIC 4.1/2",
   "marca": "TYROLIT",
@@ -423,14 +437,15 @@
   "preco": "R$ 179,90 ",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+   "../img/produtos/15/foto 1.webp",
+    "../img/produtos/15/foto 2.webp",
+    "../img/produtos/15/foto 3.webp",
+    "../img/produtos/15/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Capacete",
+  "id": "16",
   "nome": "Capacete De Segurança + Abafador De Ruidos Concha + Jugular",
   "modelo": "BASIC 4.1/2",
   "marca": "TYROLIT",
@@ -448,39 +463,41 @@
   "preco": "R$ 179,90 ",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+   "../img/produtos/16/foto 1.webp",
+    "../img/produtos/16/foto 2.webp",
+    "../img/produtos/16/foto 3.webp",
+    "../img/produtos/16/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Máquina de solda inverter Boxer Flama 161 BV azul e preta 110V/220V",
-  "nome": "Máquina de solda inverter Boxer Flama 161 BV azul e preta 110V/220V",
+  "id": "17",
+  "nome": "Botina Bota Segurança Elastico Bracol Usafe Uses Bico Pvc",
   "modelo": "BASIC 4.1/2",
-  "marca": "Boxer",
-  "descricao": "Inversora de Solda BOXER FLAMA 161BV MMA/Tig Bivolt. A Máquina de Solda Inversora FLAMA 161 BV é a Inversora Ideal para o Serralheiro. Foi Projetada Para os Mais Exigentes Profissionais de Montagens Metalúrgicas.",
+  "marca": "Bracol",
+  "descricao": "BOTA / BOTINA DE SEGURANÇA OCUPACIONAL EPI USAFE (BRACOL - SEGUNDA LINHA) MODELO SES BIQUEIRA PROTEÇÃO PVC (ATÉ 200 JAULES) fechamento em elastico recoberto.",
   "especificacoes": [
-    "Tensão: 110/220V",
-    "Amperagem: 110 v - 110 a @ 45% 160A @ 60%",
-    "Eletrodos: 110V - até 2.5 mm / 220V até 3,25mm",
-    "Engate: 9mm"
+    "Numeração: 33 ao 46 Altura (base nº 40): 115mm",
+    "Bota preta",
+    "Bico de ferro PVC",
+    "Solado bidensidade com design moderno constituído de duas camadas de poliuretano (PU)"
   ],
   "itensAcompanha": [
-    "Disco de Corte"
+    "Nada"
   ],
   "garantia": "1 ano de garantia direto com o fabricante",
-  "preco": "R$ 738,90 ",
-  "parcelas": "Até 12x R$104,21",
+  "preco": "R$ 77,00 ",
+  "parcelas": "Até 12x R$12,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/17/foto 1.webp",
+    "../img/produtos/17/foto 2.webp",
+    "../img/produtos/17/foto 3.webp",
+    "../img/produtos/17/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Óculos De Proteção",
+  "id": "18",
   "nome": "Óculos De Proteção Napoli Incolor - Steelflex Cor da lente Branco e incolor",
   "modelo": "VS205110",
   "marca": "Steelflex",
@@ -495,14 +512,15 @@
   "preco": "R$ 15,90",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/18/foto 1.webp",
+    "../img/produtos/18/foto 2.webp",
+    "../img/produtos/18/foto 3.webp",
+    "../img/produtos/18/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Luva Couro",
+  "id": "19",
   "nome": "Luva Couro Raspa P7 Soldador Epi Cano Curto Segurança",
   "modelo": "BASIC 4.1/2",
   "marca": "Marfe Luvas",
@@ -521,14 +539,15 @@
   "preco": "R$ 10,90",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/19/foto 1.webp",
+    "../img/produtos/19/foto 2.webp",
+    "../img/produtos/19/foto 3.webp",
+    "../img/produtos/19/foto 1.webp"
   ]
 }
 ,
 {
-  "id": "Máscara respirador",
+  "id": "20",
   "nome": "Camper PFF2 kit 50 unidade máscara respirador com válvula cor azul",
   "modelo": "BASIC 4.1/2",
   "marca": "Marfe Luvas",
@@ -547,9 +566,10 @@
   "preco": "R$ 57,68",
   "parcelas": "Até 12x R$104,21",
   "imagens": [
-    "",
-    "https://exemplo.com/imagem2.jpg",
-    "https://exemplo.com/imagem3.jpg"
+    "../img/produtos/20/foto 1.webp",
+    "../img/produtos/20/foto 2.webp",
+    "../img/produtos/20/foto 3.webp",
+    "../img/produtos/20/foto 1.webp"
   ]
 }
 ]

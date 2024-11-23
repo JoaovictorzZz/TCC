@@ -3,7 +3,7 @@ document.getElementById("hamburger").addEventListener("click", function() {
     document.body.classList.toggle('menu-active');
 });
 
-//
+//ativar o menu pra mobile do header
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-list a, .logo a');
 

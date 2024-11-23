@@ -4,6 +4,22 @@ document.getElementById("hamburger").addEventListener("click", function() {
     document.body.classList.toggle('menu-active');
 });
 //
+//ativar o menu pra mobile do header
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-list a, .logo a');
+
+    document.body.classList.add('fade-in');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetUrl = this.href;
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 500); 
+        });
+    });
+});
 const thumbs = document.querySelectorAll('.thumbs img');
 const mainImage = document.querySelector('.main-image');
 
@@ -13,7 +29,7 @@ thumbs.forEach(thumb => {
     });
 });
 
-
+//função de zoom e mudar as fotos do produtos
 document.addEventListener("DOMContentLoaded", function() {
     const mainImage = document.querySelector(".product-gallery .main-image");
     const zoomLente = document.createElement("div");

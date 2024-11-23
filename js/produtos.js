@@ -2,7 +2,8 @@
  document.getElementById("hamburger").addEventListener("click", function() {
     document.body.classList.toggle('menu-active');
 });
-// fim do hamburguer
+//ativar o menu pra mobile do header
+
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-list a, .logo a');
 
@@ -19,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.add('fade-out');
 
             // Aguarda a animação completar antes de navegar
-            setTimeout(() => {
+            setTimeout(function() {
                 window.location.href = targetUrl;
             }, 500); // Ajuste este valor de acordo com a duração da animação
         });
     });
 });
-
+//Carrosel 
 const carousel = document.querySelector('.carousel');
 let currentIndex = 0;
 const totalItems = document.querySelectorAll('.product-card').length;
@@ -45,18 +46,18 @@ function updateCarousel() {
     // Atualiza o deslocamento do carrossel
     carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
 }
-
+//funcão de voltar slide do carrosel 
 function prevSlide() {
     currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
     updateCarousel();
 }
-
+//funcão de passar slide do carrosel 
 function nextSlide() {
     currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
     updateCarousel();
 }
 
-   // Mostrar o botão 
+   // Mostrar o botão de voltar ao topo
    window.onscroll = function() {mostrarBotao()};
 
    function mostrarBotao() {

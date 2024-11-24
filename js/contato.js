@@ -1,3 +1,4 @@
+//contatojs
 //hamburger
 document.getElementById("hamburger").addEventListener("click", function() {
     document.body.classList.toggle('menu-active');

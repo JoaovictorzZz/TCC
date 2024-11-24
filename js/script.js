@@ -141,12 +141,10 @@ window.addEventListener('scroll', lidarComScroll);
 
 //mapa fim
 
+//adicona animação de fade-out ao clicar nos links 
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-list a, .logo a');
-
-    
     document.body.classList.add('fade-in');
-
     navLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault(); 
@@ -158,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
+//adiciona a classe show as variaveis parar a animação de surgir
 document.addEventListener('DOMContentLoaded', function() {
     const produtos = document.querySelectorAll('.produtos');
 
@@ -177,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
     checkScroll(); 
 });
 
-
+// adiciona a classe show as variaveis parar a animação de surgir
 document.addEventListener('DOMContentLoaded', function() {
     const produtos = document.querySelectorAll('.produtos');
     const hist = document.querySelector('.hist');
@@ -217,6 +215,7 @@ const carousel = document.querySelector('.carousel');
 let currentIndex = 0;
 const totalItems = document.querySelectorAll('.product-card').length;
 
+//faz o carrosel passar o slides com uma animação e sem bugs
 function updateCarousel() {
     const containerWidth = document.querySelector('.carousel-container').clientWidth;
     const itemsPerView = Math.floor(containerWidth / 250);
@@ -224,7 +223,7 @@ function updateCarousel() {
 
     carousel.style.transform = `translateX(-${translateX}px)`;
 }
-
+//função de voltar slide
 function prevSlide() {
     const containerWidth = document.querySelector('.carousel-container').clientWidth;
     const itemsPerView = Math.floor(containerWidth / 250);
@@ -236,7 +235,7 @@ function prevSlide() {
     }
     updateCarousel();
 }
-
+//função de proximo slide
 function nextSlide() {
     const containerWidth = document.querySelector('.carousel-container').clientWidth;
     const itemsPerView = Math.floor(containerWidth / 250);
@@ -248,7 +247,7 @@ function nextSlide() {
     }
     updateCarousel();
 }
-
+//mantem o carrosel altualizado ao voltar para pagina
 window.addEventListener('resize', updateCarousel);
 updateCarousel();
 
@@ -283,7 +282,7 @@ function initMap() {
     let map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
 
-// engrenagem 
+
 
 // Seleciona todos os elementos que precisam de animação
 const elementosAnimados = document.querySelectorAll('.animate-up');

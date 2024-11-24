@@ -19,7 +19,7 @@ body > header {
   display: flex;
   justify-content: center;
 }
-header>img{
+header>a>img{
   width: 250px;
   margin-top: -20px;
   height: 250px;

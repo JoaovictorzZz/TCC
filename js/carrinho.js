@@ -1,4 +1,6 @@
-[
+const TELEFONE = "551532836304";
+
+const produtos = [
   {
     "id": "1",
     "nome": "Furadeira Parafusadeira De Impacto Bateria 18v Wesco Ws2319",
@@ -24,7 +26,7 @@
     "parcelas": "Até 12x R$104,21",
     "imagens": [
       "../img/produtos/01/foto 1.webp",
-       "../img/produtos/01/foto 1.webp",
+      "../img/produtos/01/foto 1.webp",
       "../img/produtos/01/foto 2.webp",
       "../img/produtos/01/foto 3.webp"
     ]
@@ -193,7 +195,7 @@
 
 ,
 {
-  "id": "7 ",
+  "id": "7",
   "nome": "Lixadeira profissional roto orbital Wesco Profissional WS4265 azul-turquesa 400W 220V",
   "modelo": "WS4265",
   "marca": "Wesco",
@@ -258,7 +260,7 @@
 
 ,
 {
-  "id":  "9",
+  "id": "9",
   "nome": "Máquina de solda inverter Boxer Flama 201 BV azul e preta 127/220V",
   "modelo": "TOUCH 201BV",
   "marca": "Boxer",
@@ -322,7 +324,7 @@
   ]
 },
 {
-  "id": "11 ",
+  "id": "11",
   "nome": "Trena De Bolso Economic 8mt L525cme Lufkin ",
   "modelo": "L525CME",
   "marca": "Lufkin",
@@ -573,4 +575,155 @@
   ]
 }
 ]
-  
+
+// Carrega o carinho, caso exista produtos
+const carregarCarrinho = () => {
+  const 
+    itens = JSON.parse(localStorage.getItem("carrinho")) || [],
+    tabelaRef = document.getElementById("itens-carrinho"),
+    pagamentoRef = document.getElementById("pagamento");
+
+  tabelaRef.innerHTML = "";
+  pagamentoRef.innerHTML = "";
+  if(itens.length > 0) {
+    itens.forEach(item => {
+      const produto = produtos[produtos.findIndex(i => i.id === item)];
+
+      const row = document.createElement('tr');
+      const productCell = document.createElement('td');
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+
+      const productImage = document.createElement('img');
+      productImage.src = produto.imagens[0];
+      productImage.width = 48;
+      productImage.height = 48;
+      productImage.alt = produto.nome;
+      productDiv.appendChild(productImage);
+
+      const productInfo = document.createElement('div');
+      productInfo.classList.add('info');
+      const productNameDiv = document.createElement('div');
+      productNameDiv.classList.add('name');
+      productNameDiv.textContent = produto.nome;
+      productInfo.appendChild(productNameDiv);
+      productDiv.appendChild(productInfo);
+
+      productCell.appendChild(productDiv);
+
+      const priceCell = document.createElement('td');
+      priceCell.textContent = produto.preco.includes("R$") ? produto.preco : `R$${produto.preco}`;
+
+      const buttonCell = document.createElement('td');
+      const button = document.createElement('button');
+      button.classList.add('remove');
+      button.innerHTML = "<i class='bx bx-x'></i>";
+      button.onclick = () => removerDoCarrinho(produto.id);
+      buttonCell.appendChild(button);
+
+      row.appendChild(productCell);
+      row.appendChild(priceCell);
+      row.appendChild(buttonCell);
+      tabelaRef.appendChild(row);
+    });
+
+    const box = document.createElement("div");
+    box.className = "box";
+
+    const header = document.createElement("header");
+    header.textContent = "Resumo da compra";
+    box.appendChild(header);
+
+    const infoDiv = document.createElement("div");
+    infoDiv.className = "info";
+
+    const subTotalDiv = document.createElement("div");
+    const subTotalParagraph = document.createElement("p");
+    subTotalParagraph.innerHTML = `Sub-total: <span id="summary-subtotal">R$ ${calcularValor()}</span>`;
+    subTotalDiv.appendChild(subTotalParagraph);
+    infoDiv.appendChild(subTotalDiv);
+
+    box.appendChild(infoDiv);
+
+    const footer = document.createElement("footer");
+    const totalParagraph = document.createElement("p");
+    totalParagraph.innerHTML = `Total: <span id="summary-total">R$ ${calcularValor()}</span>`;
+    footer.appendChild(totalParagraph);
+    box.appendChild(footer);
+
+    const finalizarButton = document.createElement("button");
+    const finalizarLink = document.createElement("a");
+    finalizarLink.target = "_blank";
+    finalizarLink.href = gerarLink();
+    finalizarLink.style.color = "white";
+    finalizarLink.textContent = "Finalizar compras";
+    finalizarButton.onclick = () => limparCarrinho();
+    finalizarButton.appendChild(finalizarLink);
+
+    const continuarButton = document.createElement("button2");
+    const continuarLink = document.createElement("a");
+    continuarLink.href = "../templates/protudos.html";
+    continuarLink.style.color = "white";
+    continuarLink.textContent = "Continuar comprando";
+    continuarButton.appendChild(continuarLink);
+
+    pagamentoRef.appendChild(box);
+    pagamentoRef.appendChild(finalizarButton);
+    pagamentoRef.appendChild(document.createElement("br"));
+    pagamentoRef.appendChild(continuarButton);
+  } else {
+    tabelaRef.innerHTML = "<br><h2>Você ainda não adicionou nenhum produto à sua carriola.</h2>";
+  }
+}
+
+// Remove um produto do carrinho shhshshshshshs
+const removerDoCarrinho = (id) => {
+  const itens = JSON.parse(localStorage.getItem("carrinho")) || [];
+  const item = itens.findIndex(i => i === id);
+  if(item >= 0) itens.splice(item, 1);
+  localStorage.setItem("carrinho", JSON.stringify(itens));
+  carregarCarrinho();
+}
+
+// Limpa o carrinho
+const limparCarrinho = () => {
+  localStorage.removeItem("carrinho");
+  carregarCarrinho();
+}
+
+// Calcula o valor total
+const calcularValor = () => {
+  const itens = JSON.parse(localStorage.getItem("carrinho")) || [];
+  let valores = [];
+
+  itens.forEach(item => valores.push(produtos[produtos.findIndex(i => i.id === item)].preco));
+  const total = valores.reduce((soma, valor) => {
+    const numero = parseFloat(valor.replace("R$", "").replace(/\./g, "").replace(",", "."));
+    return soma + (isNaN(numero) ? 0 : numero);
+  }, 0);
+  return (Math.round(total * 100) / 100).toFixed(2);
+}
+
+// Gera o link do zapers
+const gerarLink = () => {
+  const itens = JSON.parse(localStorage.getItem("carrinho")) || [];
+  let lista = "🛒 *Pedido*\nOlá, tenho interesse em comprar os seguintes produtos:\n";
+
+  itens.forEach((item, index) => {
+    const produto = produtos[produtos.findIndex(i => i.id === item)];
+    lista += `${index + 1}. *${produto.nome}* (Modelo: ${produto.modelo})\n`;
+  });
+
+  // Escapando os emojis
+  lista.split('').map(l => {
+    return l.codePointAt(0).toString(16);
+  }).join('');
+  lista += `💵 *Total:* R$${calcularValor()}`;
+
+  console.log(`https://wa.me/${TELEFONE}?text=` + encodeURI(lista))
+  return `https://wa.me/${TELEFONE}?text=` + encodeURI(lista);
+}
+
+window.addEventListener("load", () => {
+  carregarCarrinho();
+});

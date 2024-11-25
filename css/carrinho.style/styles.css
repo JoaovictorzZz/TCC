@@ -124,6 +124,7 @@ table tbody tr td {
 .remove {
   background: #a52828;
   border: 0;
+  padding: 10px;
   width: 30px;
   height: 30px;
   border-radius: 100%;

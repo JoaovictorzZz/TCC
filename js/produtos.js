@@ -611,7 +611,8 @@ const carregarProdutos = () => {
         const comprarBtn = document.createElement('button');
         comprarBtn.className = 'add-to-cart';
         comprarBtn.textContent = 'Comprar';
-        comprarBtn.onclick = () => definirInspecao(item.id);
+        comprarBtn.onclick = () =>
+           definirInspecao(item.id);
         link.appendChild(comprarBtn);
 
         detalhes.appendChild(titulo);

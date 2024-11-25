@@ -677,6 +677,15 @@ const carregarInspecao = () => {
     whatsappLink.style.color = 'white';
     whatsappLink.style.textDecoration = 'none';
     whatsappLink.textContent = 'Adicionar a Carriola';
+    //exibe a mensagem apos adicionar algo ao carrinho
+    whatsappLink.addEventListener('click', function (event) {
+      event.preventDefault(); 
+      alert('Produto adicionado ao carrinho!');
+      // Opcional: Redireciona após o alerta
+      window.location.href = whatsappLink.href;
+  });
+  
+  whatsappButton.appendChild(whatsappLink);
     whatsappButton.appendChild(whatsappLink);
 }
 

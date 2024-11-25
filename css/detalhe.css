@@ -349,7 +349,7 @@ section{
     text-align: center;
 }
 .TextoInfo{
-    margin-top: 100px;
+    margin-top: 200px;
     font-family: 'Barlow Semi Condensed';
     letter-spacing: 1px;
     font-size: 39px;
@@ -449,8 +449,8 @@ table td:last-child {
         margin-bottom: 20px;
     }
     .product-gallery .main-image{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
     .product-details {
         text-align: center;

@@ -680,7 +680,7 @@ const carregarInspecao = () => {
     //exibe a mensagem apos adicionar algo ao carrinho
     whatsappLink.addEventListener('click', function (event) {
       event.preventDefault(); 
-      alert('Produto adicionado ao carrinho!');
+      alert('Produto adicionado a Carriola!');
       // Opcional: Redireciona após o alerta
       window.location.href = whatsappLink.href;
   });

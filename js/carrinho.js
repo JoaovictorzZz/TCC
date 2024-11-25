@@ -618,7 +618,11 @@ const carregarCarrinho = () => {
       const button = document.createElement('button');
       button.classList.add('remove');
       button.innerHTML = "<i class='bx bx-x'></i>";
-      button.onclick = () => removerDoCarrinho(produto.id);
+
+      button.onclick = () =>{
+         removerDoCarrinho(produto.id);
+         alert('Item removido da Carriola!')
+        } 
       buttonCell.appendChild(button);
 
       row.appendChild(productCell);

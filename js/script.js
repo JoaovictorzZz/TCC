@@ -84,6 +84,9 @@ function mostrarBotao() {
 function voltarAoTopo() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+window.addEventListener("load", () => {
+    carregarProdutos();
+});
 
 //fim carrosel
 

@@ -281,7 +281,7 @@ body {
     padding-top: 10%;
     z-index: 1; 
     position: relative;
-    text-align: center;
+    text-align: justify;
     margin: auto;
     font-weight: lighter;
     color: #dddddd;
@@ -290,6 +290,7 @@ body {
     letter-spacing: 2px;
     margin: 10px;
     position: relative;
+    font-style: normal;
     z-index: 1; 
     text-shadow: 1px 1px 1px rgba(11, 185, 98, 0.925);
     color: #21e091;
@@ -334,7 +335,7 @@ body {
         font-size: 20px;
         width: auto;
         padding-top: 20%;
-        text-align: center;
+        text-align: justify;
         margin: auto;
         font-weight: lighter;
         color: #dddddd;
@@ -361,7 +362,7 @@ body {
         font-size: 18px;
         width: auto;
         padding-top: 30%;
-        text-align: center;
+        text-align: justify;
         margin: auto;
         font-weight: lighter;
         color: #dddddd;

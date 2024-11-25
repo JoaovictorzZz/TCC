@@ -382,6 +382,7 @@ tr {
     .remove {
       width: 25px;
       height: 25px;
+      margin: 7px;
       font-size: 18px;
     }
     

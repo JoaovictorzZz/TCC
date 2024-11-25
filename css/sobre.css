@@ -218,7 +218,7 @@
 
 /*Elementos carrosel e fotos e texto */ 
 body {
-    background-image: url(../img/imgfotos/back-sobre.jpg);
+    background-color: #131313;
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.5;
@@ -230,12 +230,11 @@ body {
 
 /*carrosel*/
 .carousel {
-    padding-top: 150px;
+    padding-top: 190px;
     border-radius: 3px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1900px;
     margin: 20px auto;
-    max-height: 1200px;
     overflow: hidden;
     border-radius: 10px;
     position: relative;

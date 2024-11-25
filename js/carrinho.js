@@ -22,7 +22,7 @@ const produtos = [
       "01 clip para cinto"
     ],
     "garantia": "1 ano de garantia direto com o fabricante",
-    "preco": "1074.90",
+    "preco": "1074",
     "parcelas": "Até 12x R$104,21",
     "imagens": [
       "../img/produtos/01/foto 1.webp",
@@ -188,7 +188,7 @@ const produtos = [
   "imagens": [
     "../img/produtos/06/foto 1.webp",
     "../img/produtos/06/foto 2.webp",
-    "../img/produtos/06/foto3.webp",
+    "../img/produtos/06/foto 3.webp",
     "../img/produtos/06/foto 1.webp"
   ]
 }
@@ -676,7 +676,7 @@ const carregarCarrinho = () => {
   }
 }
 
-// Remove um produto do carrinho shhshshshshshs
+// Remove um produto do carrinho 
 const removerDoCarrinho = (id) => {
   const itens = JSON.parse(localStorage.getItem("carrinho")) || [];
   const item = itens.findIndex(i => i === id);

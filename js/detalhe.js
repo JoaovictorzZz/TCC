@@ -25,8 +25,8 @@ const produtos = [
       "imagens": [
         "../img/produtos/01/foto 1.webp",
         "../img/produtos/01/foto 1.webp",
-        "../img/produtos/01/foto 2.webp",
-        "../img/produtos/01/foto 3.webp"
+        "../img/produtos/01/foto 2.jpg",
+        "../img/produtos/01/foto 3.webp",
       ]
     }
   
@@ -186,7 +186,7 @@ const produtos = [
     "imagens": [
       "../img/produtos/06/foto 1.webp",
       "../img/produtos/06/foto 2.webp",
-      "../img/produtos/06/foto 3.webp",
+      "../img/produtos/06/foto3.webp",
       "../img/produtos/06/foto 1.webp"
     ]
   }
@@ -574,7 +574,7 @@ const produtos = [
   }
 ]
 
-// Adiciona um produto ao carrinho capela
+// Adiciona um produto ao carrinho 
 const adicionarAoCarrinho = (id) => {
   const itens = JSON.parse(localStorage.getItem("carrinho")) || [];
   itens.push(id);
@@ -662,16 +662,16 @@ const carregarInspecao = () => {
     cartaoParcelas.className = 'parcelas';
     cartaoParcelas.innerHTML = 'No cartão até em 12x no cartão <br><h5>sem juros no cartão</h5>';
     productDetails.appendChild(cartaoParcelas);
-
+    
     productDetails.appendChild(document.createElement("br"));
     productDetails.appendChild(document.createElement("hr"));
     productDetails.appendChild(document.createElement("br"));
 
     const whatsappButton = document.createElement('button');
     whatsappButton.className = 'whatsapp-btn';
-    whatsappButton.onclick = () => adicionarAoCarrinho(inspecao.id)
+    whatsappButton.onclick = () => adicionarAoCarrinho(inspecao.id);
     productDetails.appendChild(whatsappButton);
-
+    
     const whatsappLink = document.createElement('a');
     whatsappLink.href = '../templates/carrinho.html';
     whatsappLink.style.color = 'white';

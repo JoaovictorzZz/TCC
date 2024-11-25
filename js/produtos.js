@@ -95,7 +95,7 @@ const produtos = [
   ,
   {
     "id": "4",
-    "nome": "Esmerilhadeira Angular 230mm 9 Ws4703 220v Wesco Cor Azul-turquesa Frequência 60 Hz",
+    "nome": "Esmerilhadeira Angular 230mm 9 Ws4703 220v Wesco Cor Azul",
     "modelo": "WS4750",
     "marca": "Wesco",
     "descricao": "A Esmerilhadeira Angular 230mm/2350W da WESCO é uma ferramenta poderosa projetada para atender às demandas mais exigentes em trabalhos de corte e desbaste. Com um motor de 2350W de alta potência, esta esmerilhadeira oferece desempenho excepcional para uma variedade de aplicações industriais e domésticas.",
@@ -128,7 +128,7 @@ const produtos = [
   ,
   {
     "id": "5",
-    "nome": "Martelete Perfurador Demolidor Sds Plus 4,5j 1050w Wesco",
+    "nome": "Martelete Perfurador Demolidor Sds Plus 4,5j 1050w Wesco WS4750",
     "modelo": "WS4750",
     "marca": "Wesco",
     "descricao": "MARTELETE PERFURADOR/ROMPEDOR 26MM 1.050W WESCO WS3162K",
@@ -162,7 +162,7 @@ const produtos = [
   ,
   {
     "id": "6",
-    "nome": "Chave De Impacto 1/2 Brushless 18v Bivolt Ws2382 Wesco",
+    "nome": "Chave De Impacto 1/2 Brushless 18v 2.0Ah Li Bivolt Ws2382 Wesco  ",
     "modelo": "WS4750",
     "marca": "Wesco",
     "descricao": "A Chave de Impacto 1/2 a Bateria Brushless 18V Bivolt WS2382 da Wesco é uma ferramenta versátil que pode ser usada em uma variedade de aplicações, especialmente aquelas que envolvem aperto e desaperto de parafusos e porcas com alta potência de torque",
@@ -194,7 +194,7 @@ const produtos = [
   ,
   {
     "id": "7",
-    "nome": "Lixadeira profissional roto orbital Wesco Profissional WS4265 azul-turquesa 400W 220V",
+    "nome": "Lixadeira profissional roto orbital Wesco Profissional WS4265  400W 220V",
     "modelo": "WS4265",
     "marca": "Wesco",
     "descricao": "Com esta lixadeira, você conseguirá um trabalho de maior qualidade para seus clientes, pois ela permitirá que você realize o lixamento de diferentes materiais com o melhor resultado. Consiga detalhes exclusivos!",
@@ -323,7 +323,7 @@ const produtos = [
   },
   {
     "id": "11",
-    "nome": "Trena De Bolso Economic 8mt L525cme Lufkin ",
+    "nome": "Trena De Bolso Economic 8- metros 25,4 mm L525cme Lufkin  ",
     "modelo": "L525CME",
     "marca": "Lufkin",
     "descricao": "A Trena profissional 8 metros L525CME da Lufkin é ideal para profissionais que buscam um instrumento de medição confiável e preciso. Conta com estojo reforçado em plástico ABS, com design ergonômico para melhor manuseio. Adequada para profissionais de construção civil, marcenarias, carpintarias, indústrias, prestadores de serviços, instaladores em geral.",
@@ -521,8 +521,8 @@ const produtos = [
   ,
   {
     "id": "19",
-    "nome": "Luva Couro Raspa P7 Soldador Epi Cano Curto Segurança",
-    "modelo": "BASIC 4.1/2",
+    "nome": "Luva Couro Raspa P7 Soldador Epi Cano Curto Segurança BASIC",
+    "modelo": "BASIC 4.1/2", 
     "marca": "Marfe Luvas",
     "descricao": "Luva Cano Curto",
     "especificacoes": [
@@ -582,6 +582,7 @@ const carregarProdutos = () => {
     const produtosRef = document.getElementById("products");
 
     // Exibe os produtos disponíveis
+    //index
     produtos.forEach((item, index) => {
         const produtosCard = document.createElement("div");
         produtosCard.className = 'product-card';

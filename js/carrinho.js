@@ -656,20 +656,25 @@ const carregarCarrinho = () => {
     box.appendChild(footer);
 
     const finalizarButton = document.createElement("button");
-    const finalizarLink = document.createElement("a");
-    finalizarLink.target = "_blank";
-    finalizarLink.href = gerarLink();
-    finalizarLink.style.color = "white";
-    finalizarLink.textContent = "Finalizar compras";
-    finalizarButton.onclick = () => limparCarrinho();
-    finalizarButton.appendChild(finalizarLink);
+    finalizarButton.style.color = "white";
+    finalizarButton.textContent = "Finalizar compras";
+    finalizarButton.onclick = () => {
+    window.open(gerarLink(), "_blank"); 
+    limparCarrinho(); 
+};
 
-    const continuarButton = document.createElement("button2");
-    const continuarLink = document.createElement("a");
-    continuarLink.href = "../templates/protudos.html";
-    continuarLink.style.color = "white";
-    continuarLink.textContent = "Continuar comprando";
-    continuarButton.appendChild(continuarLink);
+document.body.appendChild(finalizarButton);
+
+    const continuarButton = document.createElement("button");
+    continuarButton.style.color = "white";
+    continuarButton.style.backgroundColor ="#0a7c9f"
+    continuarButton.textContent = "Continuar comprando";
+    continuarButton.onclick = () => {
+    window.location.href = "../templates/protudos.html";
+};
+
+document.body.appendChild(continuarButton);
+
 
     pagamentoRef.appendChild(box);
     pagamentoRef.appendChild(finalizarButton);

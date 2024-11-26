@@ -28,7 +28,7 @@ function enviarEmail(){
     //Vai pra pagina obrigado apos o click dps de um tempo 
     setTimeout(function(){
         window.location.href = "../templates/obrigado.html";
-    },2000); //tempo
+    },3000); //tempo 
 }
 
 
